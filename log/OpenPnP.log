@@ -1,0 +1,15 @@
+2025-06-26 23:31:36.281 Configuration INFO: No packages.xml found in configuration directory, loading defaults.
+2025-06-26 23:31:36.469 Configuration INFO: No parts.xml found in configuration directory, loading defaults.
+2025-06-26 23:31:36.490 Configuration INFO: No boards.xml found in configuration directory, loading defaults.
+2025-06-26 23:31:36.495 Configuration INFO: No panels.xml found in configuration directory, loading defaults.
+2025-06-26 23:31:36.500 Configuration INFO: No vision-settings.xml found in configuration directory, loading defaults.
+2025-06-26 23:31:36.503 Configuration INFO: No machine.xml found in configuration directory, loading defaults.
+2025-06-26 23:31:37.317 Configuration INFO: Defaults were loaded. Saving to configuration directory.
+2025-06-26 23:31:38.024 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-06-26 23:31:38.025 CameraView DEBUG: No reticle preference found.
+2025-06-26 23:31:39.022 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-06-26 23:31:39.023 CameraView DEBUG: No reticle preference found.
+2025-06-26 23:31:39.029 AbstractBroadcastingCamera TRACE: Camera Top thread 111 started.
+2025-06-26 23:31:39.029 AbstractBroadcastingCamera TRACE: Camera Bottom thread 113 started.
+2025-06-26 23:31:40.278 Main INFO: Bienvenue, Bienvenido, Willkommen, Hello, Namaskar, Welkom, Bonjour to OpenPnP version 2025-02-02_20-41-38.e468422.
+2025-06-26 23:31:40.278 Scripting TRACE: Scripting.on Startup
