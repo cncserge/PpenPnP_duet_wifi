@@ -1,0 +1,77 @@
+2025-06-26 23:33:43.308 Configuration INFO: No packages.xml found in configuration directory, loading defaults.
+2025-06-26 23:33:43.502 Configuration INFO: No parts.xml found in configuration directory, loading defaults.
+2025-06-26 23:33:43.522 Configuration INFO: No boards.xml found in configuration directory, loading defaults.
+2025-06-26 23:33:43.527 Configuration INFO: No panels.xml found in configuration directory, loading defaults.
+2025-06-26 23:33:43.530 Configuration INFO: No vision-settings.xml found in configuration directory, loading defaults.
+2025-06-26 23:33:43.533 Configuration INFO: No machine.xml found in configuration directory, loading defaults.
+2025-06-26 23:33:44.349 Configuration INFO: Defaults were loaded. Saving to configuration directory.
+2025-06-26 23:33:45.080 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-06-26 23:33:45.080 CameraView DEBUG: No reticle preference found.
+2025-06-26 23:33:45.973 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-06-26 23:33:45.974 CameraView DEBUG: No reticle preference found.
+2025-06-26 23:33:45.983 AbstractBroadcastingCamera TRACE: Camera Bottom thread 113 started.
+2025-06-26 23:33:45.983 AbstractBroadcastingCamera TRACE: Camera Top thread 111 started.
+2025-06-26 23:33:47.109 Main INFO: Bienvenue, Bienvenido, Willkommen, Hello, Namaskar, Welkom, Bonjour to OpenPnP version 2025-02-02_20-41-38.e468422.
+2025-06-26 23:33:47.110 Scripting TRACE: Scripting.on Startup
+2025-06-26 23:34:07.532 UiUtils TRACE: Browse to https://github.com/openpnp/openpnp/wiki/Setup-and-Calibration%3A-Nozzle-Setup
+2025-06-26 23:34:14.643 Solutions$Issue DEBUG: About to set state Solved (from Open) on ReferenceHead H1: Создать сопла для этой головы
+2025-06-26 23:35:22.155 ReferenceMachine DEBUG: setEnabled(true)
+2025-06-26 23:35:22.156 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] Connect
+2025-06-26 23:35:22.172 GcodeDriver TRACE: GcodeDriver waiting for connection 3000ms
+2025-06-26 23:35:25.174 GcodeDriver TRACE: Send-on-change logic for Feed Rate, Acceleration and Jerk reset
+2025-06-26 23:35:25.175 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] Connect
+2025-06-26 23:35:25.181 GcodeDriver$ReaderThread ERROR: [GcodeDriver:192.168.0.127:23] Read error: java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:243)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:323)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1116)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1103)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:190)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implRead(BufferedReader.java:196)
+	at java.base/java.io.BufferedReader.read(BufferedReader.java:181)
+	at org.openpnp.machine.reference.driver.TcpCommunications.read(TcpCommunications.java:73)
+	at org.openpnp.machine.reference.driver.ReferenceDriverCommunications.readUntil(ReferenceDriverCommunications.java:108)
+	at org.openpnp.machine.reference.driver.ReferenceDriverCommunications.readLine(ReferenceDriverCommunications.java:86)
+	at org.openpnp.machine.reference.driver.GcodeDriver$ReaderThread.run(GcodeDriver.java:1487)
+2025-06-26 23:35:25.195 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:35:25.200 GcodeDriver TRACE: GcodeDriver waiting for connection 3000ms
+2025-06-26 23:35:28.202 GcodeDriver TRACE: Send-on-change logic for Feed Rate, Acceleration and Jerk reset
+2025-06-26 23:35:28.203 GcodeDriver DEBUG: === Detecting firmware and position reporting, please ignore any errors and warnings.
+2025-06-26 23:35:28.203 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> M115, 20000
+2025-06-26 23:35:28.207 GcodeDriver WARNING: GcodeDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:35:28.225 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << FIRMWARE_NAME: RepRapFirmware for Duet 2 WiFi/Ethernet FIRMWARE_VERSION: 3.6.0 ELECTRONICS: Duet WiFi 1.02 or later FIRMWARE_DATE: 2025-05-25 08:04:38
+2025-06-26 23:35:28.226 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-26 23:35:28.226 GcodeDriver TRACE: GcodeDriver got response matching "^.*FIRMWARE.*" after 18ms
+2025-06-26 23:35:28.265 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> M114, 20000
+2025-06-26 23:35:28.266 GcodeDriver WARNING: GcodeDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:35:28.278 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << X:33.320 Y:15.000 Z:70.000 E:0.000 E0:0.0 E1:0.0 Count 42650 19200 5600 Machine 33.320 15.000 70.000 Bed comp 0.000
+2025-06-26 23:35:28.279 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-26 23:35:28.279 GcodeDriver TRACE: GcodeDriver got response matching ".*[XYZABCDEUVW]:-?\d+\.\d+.*" after 13ms
+2025-06-26 23:35:28.280 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> M584, 20000
+2025-06-26 23:35:28.281 GcodeDriver WARNING: GcodeDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:35:28.290 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Driver assignments: X0 Y1 Z2 E3:4, 3 axes visible
+2025-06-26 23:35:28.290 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-26 23:35:28.290 GcodeDriver TRACE: GcodeDriver got response matching "^Driver assignments:.*" after 9ms
+2025-06-26 23:35:28.292 GcodeDriver DEBUG: === End detecting firmware and position reporting.
+2025-06-26 23:35:28.293 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] Read error while disconnecting (expected)
+2025-06-26 23:35:35.727 GcodeDriverConsole DEBUG: Gcode console error: java.lang.Exception: GcodeDriver:192.168.0.127:23 IO Error on reading from the controller.
+2025-06-26 23:35:37.676 GcodeDriverConsole DEBUG: Gcode console error: java.lang.Exception: GcodeDriver:192.168.0.127:23 IO Error on reading from the controller.
+2025-06-26 23:35:41.215 GcodeDriverConsole DEBUG: Gcode console error: java.lang.Exception: GcodeDriver:192.168.0.127:23 IO Error on reading from the controller.
+2025-06-26 23:35:51.384 GcodeDriverConsole DEBUG: Gcode console error: java.lang.Exception: GcodeDriver:192.168.0.127:23 IO Error on reading from the controller.
+2025-06-26 23:35:54.192 GcodeDriverConsole DEBUG: Gcode console error: java.lang.Exception: GcodeDriver:192.168.0.127:23 IO Error on reading from the controller.
+2025-06-26 23:36:45.019 MainFrame INFO: Shutting down...
+2025-06-26 23:36:45.133 ReferenceMachine DEBUG: setEnabled(false)
+2025-06-26 23:36:45.134 ReferenceMachine INFO: setHomed(false)
+2025-06-26 23:36:45.135 ReferenceActuator DEBUG: LIGHT_TOP.actuate(false)
+2025-06-26 23:36:45.137 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:36:45.137 ReferenceActuator DEBUG: LIGHT_BOTTOM.actuate(false)
+2025-06-26 23:36:45.138 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:36:45.144 AbstractBroadcastingCamera TRACE: Camera Bottom thread 113 bye-bye.
+2025-06-26 23:36:45.144 AbstractBroadcastingCamera TRACE: Camera Top thread 111 bye-bye.
+2025-06-26 23:36:45.145 MainFrame INFO: Shutdown complete, exiting.

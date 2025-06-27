@@ -1,0 +1,49 @@
+2025-06-27 00:07:59.871 Main INFO: Bienvenue, Bienvenido, Willkommen, Hello, Namaskar, Welkom, Bonjour to OpenPnP version 2025-02-02_20-41-38.e468422.
+2025-06-27 00:07:59.873 Scripting TRACE: Scripting.on Startup
+2025-06-27 00:07:59.888 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-06-27 00:07:59.889 CameraView DEBUG: No reticle preference found.
+2025-06-27 00:08:00.784 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-06-27 00:08:00.784 CameraView DEBUG: No reticle preference found.
+2025-06-27 00:08:00.796 AbstractBroadcastingCamera TRACE: Camera Bottom thread 113 started.
+2025-06-27 00:08:00.796 AbstractBroadcastingCamera TRACE: Camera Top thread 111 started.
+2025-06-27 00:08:04.485 ReferenceMachine DEBUG: setEnabled(true)
+2025-06-27 00:08:04.491 GcodeDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] Connect
+2025-06-27 00:08:04.507 GcodeDriver TRACE: GcodeAsyncDriver waiting for connection 3000ms
+2025-06-27 00:08:07.508 GcodeDriver TRACE: Send-on-change logic for Feed Rate, Acceleration and Jerk reset
+2025-06-27 00:08:07.526 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:08:13.562 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2025-06-27 00:08:13.564 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2025-06-27 00:08:13.565 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2025-06-27 00:08:13.567 AbstractHeadMountable DEBUG: Top.moveToSafeZ(1.0)
+2025-06-27 00:08:13.568 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 00:08:13.574 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:08:29.725 AbstractHeadMountable DEBUG: N1.moveTo((0.010000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 00:08:29.726 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: Machine not homed. Jogging only allowed if driver GcodeAsyncDriver has option "Sync. Initial Location" enabled.
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.moveTo(AbstractMotionPlanner.java:173)
+	at org.openpnp.machine.reference.driver.NullMotionPlanner.moveTo(NullMotionPlanner.java:48)
+	at org.openpnp.machine.reference.ReferenceHead.moveTo(ReferenceHead.java:157)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:243)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:280)
+	at org.openpnp.gui.JogControlsPanel.jogTool(JogControlsPanel.java:216)
+	at org.openpnp.gui.JogControlsPanel.lambda$jog$0(JogControlsPanel.java:167)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-27 00:08:29.727 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:08:29.728 MessageBoxes DEBUG: Error: java.lang.Exception: Machine not homed. Jogging only allowed if driver GcodeAsyncDriver has option "Sync. Initial Location" enabled.
+2025-06-27 00:08:36.432 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> M114
+2025-06-27 00:08:36.434 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> M114
+2025-06-27 00:08:36.481 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << X:19.990 Y:-0.090 Z:40.000 E:0.000 E0:0.0 E1:0.0 Count 25587 -115 3200 Machine 19.990 -0.090 40.000 Bed comp 0.000
+2025-06-27 00:08:36.483 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 00:09:22.087 MainFrame INFO: Shutting down...
+2025-06-27 00:09:22.289 ReferenceMachine DEBUG: setEnabled(false)
+2025-06-27 00:09:22.290 ReferenceMachine INFO: setHomed(false)
+2025-06-27 00:09:22.294 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed M114
+2025-06-27 00:09:22.301 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] Read error while disconnecting (expected)
+2025-06-27 00:09:22.395 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] disconnectRequested, bye-bye.
+2025-06-27 00:09:22.409 AbstractBroadcastingCamera TRACE: Camera Bottom thread 113 bye-bye.
+2025-06-27 00:09:22.410 AbstractBroadcastingCamera TRACE: Camera Top thread 111 bye-bye.
+2025-06-27 00:09:22.410 MainFrame INFO: Shutdown complete, exiting.

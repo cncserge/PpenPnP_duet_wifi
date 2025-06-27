@@ -1,0 +1,844 @@
+2025-06-27 09:43:46.765 Main INFO: Bienvenue, Bienvenido, Willkommen, Hello, Namaskar, Welkom, Bonjour to OpenPnP version 2025-02-02_20-41-38.e468422.
+2025-06-27 09:43:46.767 Scripting TRACE: Scripting.on Startup
+2025-06-27 09:43:46.777 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-06-27 09:43:46.777 CameraView DEBUG: No reticle preference found.
+2025-06-27 09:43:47.714 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-06-27 09:43:47.715 CameraView DEBUG: No reticle preference found.
+2025-06-27 09:43:47.726 AbstractBroadcastingCamera TRACE: Camera Bottom thread 113 started.
+2025-06-27 09:43:47.726 AbstractBroadcastingCamera TRACE: Camera Top thread 111 started.
+2025-06-27 09:43:52.613 ReferenceMachine DEBUG: setEnabled(true)
+2025-06-27 09:43:52.617 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] Connect
+2025-06-27 09:43:52.850 GcodeDriver TRACE: GcodeDriver waiting for connection 3000ms
+2025-06-27 09:43:55.851 GcodeDriver TRACE: Send-on-change logic for Feed Rate, Acceleration and Jerk reset
+2025-06-27 09:43:55.899 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:44:06.643 GcodeDriver DEBUG: === Detecting firmware and position reporting, please ignore any errors and warnings.
+2025-06-27 09:44:06.643 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> M115, 20000
+2025-06-27 09:44:06.713 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << FIRMWARE_NAME: RepRapFirmware for Duet 2 WiFi/Ethernet FIRMWARE_VERSION: 3.6.0 ELECTRONICS: Duet WiFi 1.02 or later FIRMWARE_DATE: 2025-05-25 08:04:38
+2025-06-27 09:44:06.715 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:44:06.715 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed M115
+2025-06-27 09:44:06.756 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> M114, 20000
+2025-06-27 09:44:06.763 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << X:0.000 Y:0.000 Z:0.000 E:0.000 E0:0.0 E1:0.0 Count 0 0 0 Machine 0.000 0.000 0.000 Bed comp 0.000
+2025-06-27 09:44:06.764 GcodeDriver TRACE: Position report: X:0.000 Y:0.000 Z:0.000 E:0.000 E0:0.0 E1:0.0 Count 0 0 0 Machine 0.000 0.000 0.000 Bed comp 0.000
+2025-06-27 09:44:06.765 GcodeDriver WARNING: GcodeDriver: Axis C1 letter E0 missing in POSITION_REPORT_REGEX groups.
+2025-06-27 09:44:06.766 GcodeDriver WARNING: GcodeDriver: Axis C2 letter E1 missing in POSITION_REPORT_REGEX groups.
+2025-06-27 09:44:06.766 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:44:06.767 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed M114
+2025-06-27 09:44:06.768 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> M584, 20000
+2025-06-27 09:44:06.780 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Driver assignments: X0 Y1 Z2 E3:4, 3 axes visible
+2025-06-27 09:44:06.781 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:44:06.782 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed M584
+2025-06-27 09:44:06.784 GcodeDriver DEBUG: === End detecting firmware and position reporting.
+2025-06-27 09:44:06.785 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:47:15.785 ReferenceMachine DEBUG: setEnabled(false)
+2025-06-27 09:47:15.786 ReferenceMachine INFO: setHomed(false)
+2025-06-27 09:47:15.787 ReferenceActuator DEBUG: LIGHT_BOTTOM.actuate(false)
+2025-06-27 09:47:15.788 ReferenceActuator DEBUG: LIGHT_TOP.actuate(false)
+2025-06-27 09:47:15.821 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:47:16.797 ReferenceMachine DEBUG: setEnabled(true)
+2025-06-27 09:47:16.809 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:47:28.073 GcodeDriver DEBUG: === Detecting firmware and position reporting, please ignore any errors and warnings.
+2025-06-27 09:47:28.073 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> M115, 20000
+2025-06-27 09:47:28.142 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << FIRMWARE_NAME: RepRapFirmware for Duet 2 WiFi/Ethernet FIRMWARE_VERSION: 3.6.0 ELECTRONICS: Duet WiFi 1.02 or later FIRMWARE_DATE: 2025-05-25 08:04:38
+2025-06-27 09:47:28.143 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:47:28.144 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed M115
+2025-06-27 09:47:28.145 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> M114, 20000
+2025-06-27 09:47:28.159 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << X:0.000 Y:0.000 Z:0.000 E:0.000 E0:0.0 E1:0.0 Count 0 0 0 Machine 0.000 0.000 0.000 Bed comp 0.000
+2025-06-27 09:47:28.160 GcodeDriver TRACE: Position report: X:0.000 Y:0.000 Z:0.000 E:0.000 E0:0.0 E1:0.0 Count 0 0 0 Machine 0.000 0.000 0.000 Bed comp 0.000
+2025-06-27 09:47:28.161 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:47:28.161 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed M114
+2025-06-27 09:47:28.162 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> M584, 20000
+2025-06-27 09:47:28.173 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Driver assignments: X0 Y1 Z2 E3:4, 3 axes visible
+2025-06-27 09:47:28.174 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:47:28.174 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed M584
+2025-06-27 09:47:28.176 GcodeDriver DEBUG: === End detecting firmware and position reporting.
+2025-06-27 09:47:28.176 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:48:34.364 AbstractHeadMountable DEBUG: N1.moveTo((0.010000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:48:34.366 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: Machine not homed. Jogging only allowed if driver GcodeDriver has option "Sync. Initial Location" enabled.
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.moveTo(AbstractMotionPlanner.java:173)
+	at org.openpnp.machine.reference.driver.NullMotionPlanner.moveTo(NullMotionPlanner.java:48)
+	at org.openpnp.machine.reference.ReferenceHead.moveTo(ReferenceHead.java:157)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:243)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:280)
+	at org.openpnp.gui.JogControlsPanel.jogTool(JogControlsPanel.java:216)
+	at org.openpnp.gui.JogControlsPanel.lambda$jog$0(JogControlsPanel.java:167)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-27 09:48:34.367 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:48:34.368 MessageBoxes DEBUG: Error: java.lang.Exception: Machine not homed. Jogging only allowed if driver GcodeDriver has option "Sync. Initial Location" enabled.
+2025-06-27 09:48:38.128 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: GcodeDriver configuration error: missing GET_POSITION_COMMAND.
+	at org.openpnp.machine.reference.driver.GcodeDriver.getReportedLocation(GcodeDriver.java:757)
+	at org.openpnp.machine.reference.driver.wizards.AbstractReferenceDriverConfigurationWizard.lambda$saveToModel$0(AbstractReferenceDriverConfigurationWizard.java:404)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-27 09:48:38.128 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:48:38.134 MessageBoxes DEBUG: Error: java.lang.Exception: GcodeDriver configuration error: missing GET_POSITION_COMMAND.
+2025-06-27 09:48:53.051 AbstractHeadMountable DEBUG: N1.moveTo((0.010000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:48:53.098 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0100  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:48:53.131 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Error: G1: insufficient axes homed
+2025-06-27 09:48:53.132 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:48:53.132 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0.01{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:48:53.140 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:48:53.957 AbstractHeadMountable DEBUG: N1.moveTo((0.020000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:48:53.966 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0200  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:48:54.054 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Error: G1: insufficient axes homed
+2025-06-27 09:48:54.055 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:48:54.056 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0.02{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:48:54.059 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:48:54.646 AbstractHeadMountable DEBUG: N1.moveTo((0.010000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:48:54.650 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0100  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:48:54.777 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Error: G1: insufficient axes homed
+2025-06-27 09:48:54.778 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:48:54.778 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0.01{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:48:54.782 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:48:55.096 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:48:55.100 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0000  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:48:55.187 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Error: G1: insufficient axes homed
+2025-06-27 09:48:55.188 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:48:55.189 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:48:55.192 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:48:56.064 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:48:56.067 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y0.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:48:56.102 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Error: G1: insufficient axes homed
+2025-06-27 09:48:56.102 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:48:56.103 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y0.01{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:48:56.104 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:48:56.490 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:48:56.494 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y0.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:48:56.500 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Error: G1: insufficient axes homed
+2025-06-27 09:48:56.501 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:48:56.501 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y0{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:48:56.503 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:00.030 ReferenceMachine DEBUG: homing machine
+2025-06-27 09:49:00.033 GcodeDriver TRACE: Send-on-change logic for Feed Rate, Acceleration and Jerk reset
+2025-06-27 09:49:00.034 Scripting TRACE: Scripting.on Machine.AfterDriverHoming
+2025-06-27 09:49:00.035 ReferenceHead DEBUG: H1.home()
+2025-06-27 09:49:00.035 ReferenceNozzle DEBUG: N1.home()
+2025-06-27 09:49:00.035 ReferenceNozzle DEBUG: N2.home()
+2025-06-27 09:49:00.035 Scripting TRACE: Scripting.on Machine.AfterHoming
+2025-06-27 09:49:00.036 ReferenceMachine INFO: setHomed(true)
+2025-06-27 09:49:00.036 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:01.698 AbstractHeadMountable DEBUG: N1.moveTo((0.010000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:01.702 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0100  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:01.745 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Error: G1: insufficient axes homed
+2025-06-27 09:49:01.746 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:01.746 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0.01{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:01.749 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:02.071 AbstractHeadMountable DEBUG: N1.moveTo((0.020000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:02.074 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0200  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:02.143 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Error: G1: insufficient axes homed
+2025-06-27 09:49:02.144 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:02.144 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0.02{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:02.146 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:02.274 AbstractHeadMountable DEBUG: N1.moveTo((0.030000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:02.278 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:02.348 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Error: G1: insufficient axes homed
+2025-06-27 09:49:02.348 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:02.349 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0.03{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:02.351 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:02.799 AbstractHeadMountable DEBUG: N1.moveTo((0.040000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:02.802 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0400  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:02.860 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Error: G1: insufficient axes homed
+2025-06-27 09:49:02.861 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:02.861 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0.04{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:02.864 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:03.024 AbstractHeadMountable DEBUG: N1.moveTo((0.050000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:03.026 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0500  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:03.065 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Error: G1: insufficient axes homed
+2025-06-27 09:49:03.065 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:03.065 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0.05{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:03.067 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:03.196 AbstractHeadMountable DEBUG: N1.moveTo((0.060000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:03.198 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0600  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:03.270 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Error: G1: insufficient axes homed
+2025-06-27 09:49:03.270 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:03.271 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0.06{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:03.278 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:03.376 AbstractHeadMountable DEBUG: N1.moveTo((0.070000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:03.378 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0700  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:03.389 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Error: G1: insufficient axes homed
+2025-06-27 09:49:03.389 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:03.390 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0.07{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:03.391 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:04.291 AbstractHeadMountable DEBUG: N1.moveTo((0.060000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:04.294 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0600  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:04.395 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Error: G1: insufficient axes homed
+2025-06-27 09:49:04.396 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:04.396 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0.06{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:04.400 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:04.478 AbstractHeadMountable DEBUG: N1.moveTo((0.050000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:04.481 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0500  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:04.487 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Error: G1: insufficient axes homed
+2025-06-27 09:49:04.487 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:04.487 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0.05{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:04.489 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:06.886 AbstractHeadMountable DEBUG: N1.moveTo((0.050000, 0.000000, 0.010000, 0.000000 mm), 1.0)
+2025-06-27 09:49:06.889 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z0.0100 F1000.00 ; move to target, 20000
+2025-06-27 09:49:06.955 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Error: G1: insufficient axes homed
+2025-06-27 09:49:06.956 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:06.956 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z0.01F1000
+2025-06-27 09:49:06.959 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:07.644 AbstractHeadMountable DEBUG: N1.moveTo((0.050000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:07.646 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:07.681 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Error: G1: insufficient axes homed
+2025-06-27 09:49:07.681 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:07.683 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z0F1000
+2025-06-27 09:49:07.684 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:36.156 GcodeDriver DEBUG: === Detecting firmware and position reporting, please ignore any errors and warnings.
+2025-06-27 09:49:36.158 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> M115, 20000
+2025-06-27 09:49:36.208 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << FIRMWARE_NAME: RepRapFirmware for Duet 2 WiFi/Ethernet FIRMWARE_VERSION: 3.6.0 ELECTRONICS: Duet WiFi 1.02 or later FIRMWARE_DATE: 2025-05-25 08:04:38
+2025-06-27 09:49:36.210 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:36.211 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed M115
+2025-06-27 09:49:36.213 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> M114, 20000
+2025-06-27 09:49:36.293 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << X:-1.000 Y:-10.000 Z:40.000 E:0.000 E0:0.0 E1:0.0 Count -1280 -12800 3200 Machine -1.000 -10.000 40.000 Bed comp 0.000
+2025-06-27 09:49:36.294 GcodeDriver TRACE: Position report: X:-1.000 Y:-10.000 Z:40.000 E:0.000 E0:0.0 E1:0.0 Count -1280 -12800 3200 Machine -1.000 -10.000 40.000 Bed comp 0.000
+2025-06-27 09:49:36.296 GcodeDriver TRACE: Send-on-change logic for Feed Rate, Acceleration and Jerk reset
+2025-06-27 09:49:36.297 GcodeDriver WARNING: Position report cannot be processed when motion might still be pending. Missing Machine Coordination on Actuators?
+2025-06-27 09:49:36.297 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:36.297 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed M114
+2025-06-27 09:49:36.299 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> M584, 20000
+2025-06-27 09:49:36.381 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << Driver assignments: X0 Y1 Z2 E3:4, 3 axes visible
+2025-06-27 09:49:36.382 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:36.383 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed M584
+2025-06-27 09:49:36.387 GcodeDriver DEBUG: === End detecting firmware and position reporting.
+2025-06-27 09:49:36.389 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:41.687 AbstractHeadMountable DEBUG: N1.moveTo((0.060000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:41.695 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0600  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:41.701 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:41.702 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0.06{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:41.704 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:42.662 AbstractHeadMountable DEBUG: N1.moveTo((0.050000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:42.668 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0500  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:42.673 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:42.674 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0.05{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:42.676 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:44.507 AbstractHeadMountable DEBUG: N1.moveTo((1.050000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:44.548 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X1.0500  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:44.554 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:44.555 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X1.05{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:44.557 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:45.122 AbstractHeadMountable DEBUG: N1.moveTo((2.050000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:45.126 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X2.0500  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:45.141 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:45.141 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X2.05{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:45.143 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:45.357 AbstractHeadMountable DEBUG: N1.moveTo((3.050000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:45.359 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X3.0500  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:45.364 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:45.364 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X3.05{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:45.365 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:45.564 AbstractHeadMountable DEBUG: N1.moveTo((4.050000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:45.568 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X4.0500  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:45.573 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:45.573 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X4.05{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:45.575 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:45.752 AbstractHeadMountable DEBUG: N1.moveTo((5.050000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:45.754 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X5.0500  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:45.761 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:45.762 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X5.05{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:45.763 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:45.940 AbstractHeadMountable DEBUG: N1.moveTo((6.050000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:45.943 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X6.0500  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:45.950 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:45.950 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X6.05{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:45.952 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:46.119 AbstractHeadMountable DEBUG: N1.moveTo((7.050000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:46.121 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X7.0500  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:46.134 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:46.134 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X7.05{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:46.136 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:46.307 AbstractHeadMountable DEBUG: N1.moveTo((8.050000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:46.309 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X8.0500  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:46.321 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:46.321 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X8.05{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:46.323 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:46.450 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:46.453 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X9.0500  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:49:46.466 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:46.466 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X9.05{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:49:46.468 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:47.440 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 1.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:47.443 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z1.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:47.447 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:47.448 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z1F1000
+2025-06-27 09:49:47.449 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:47.668 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 2.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:47.671 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z2.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:47.682 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:47.682 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z2F1000
+2025-06-27 09:49:47.683 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:47.852 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 3.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:47.854 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z3.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:47.871 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:47.871 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z3F1000
+2025-06-27 09:49:47.873 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:51.437 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 2.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:51.439 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z2.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:51.445 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:51.446 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z2F1000
+2025-06-27 09:49:51.447 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:51.977 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 1.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:51.979 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z1.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:51.986 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:51.987 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z1F1000
+2025-06-27 09:49:51.988 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:52.212 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:52.214 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:52.230 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:52.230 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z0F1000
+2025-06-27 09:49:52.231 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:52.411 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, -1.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:52.414 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-1.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:52.427 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:52.427 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z-1F1000
+2025-06-27 09:49:52.428 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:53.470 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:53.472 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:53.477 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:53.477 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z0F1000
+2025-06-27 09:49:53.479 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:53.695 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 1.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:53.697 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z1.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:53.708 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:53.709 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z1F1000
+2025-06-27 09:49:53.710 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:53.897 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 2.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:53.898 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z2.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:53.929 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:53.929 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z2F1000
+2025-06-27 09:49:53.930 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:54.076 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 3.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:54.079 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z3.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:54.097 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:54.097 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z3F1000
+2025-06-27 09:49:54.098 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:54.273 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 4.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:54.274 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z4.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:54.279 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:54.279 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z4F1000
+2025-06-27 09:49:54.280 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:54.437 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 5.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:54.439 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z5.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:54.444 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:54.445 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z5F1000
+2025-06-27 09:49:54.446 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:54.602 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 6.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:54.603 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z6.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:54.609 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:54.609 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z6F1000
+2025-06-27 09:49:54.610 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:54.760 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 7.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:54.761 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z7.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:54.769 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:54.769 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z7F1000
+2025-06-27 09:49:54.770 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:54.917 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 8.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:54.919 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z8.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:54.926 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:54.926 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z8F1000
+2025-06-27 09:49:54.929 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:55.082 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 9.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:55.083 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z9.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:55.089 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:55.089 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z9F1000
+2025-06-27 09:49:55.090 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:55.270 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 10.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:55.272 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z10.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:55.289 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:55.289 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z10F1000
+2025-06-27 09:49:55.291 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:55.389 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 11.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:55.391 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z11.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:55.401 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:55.401 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z11F1000
+2025-06-27 09:49:55.402 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:55.539 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 12.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:55.541 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z12.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:55.553 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:55.554 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z12F1000
+2025-06-27 09:49:55.555 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:55.696 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 13.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:55.699 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z13.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:55.703 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:55.704 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z13F1000
+2025-06-27 09:49:55.705 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:55.847 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 14.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:55.848 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z14.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:55.856 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:55.856 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z14F1000
+2025-06-27 09:49:55.859 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:55.990 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 15.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:55.991 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z15.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:56.117 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:56.117 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z15F1000
+2025-06-27 09:49:56.119 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:56.147 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 16.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:56.149 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z16.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:56.197 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:56.197 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z16F1000
+2025-06-27 09:49:56.199 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:56.296 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 17.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:56.298 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z17.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:56.371 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:56.371 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z17F1000
+2025-06-27 09:49:56.374 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:56.627 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 18.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:56.629 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z18.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:56.648 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:56.648 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z18F1000
+2025-06-27 09:49:56.649 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:56.807 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 19.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:56.808 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z19.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:56.920 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:56.920 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z19F1000
+2025-06-27 09:49:56.922 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:56.994 AbstractHeadMountable DEBUG: N1.moveTo((9.050000, 0.000000, 20.000000, 0.000000 mm), 1.0)
+2025-06-27 09:49:56.996 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z20.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:49:57.086 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:49:57.086 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z20F1000
+2025-06-27 09:49:57.088 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:49:57.713 ReferenceMachine DEBUG: homing machine
+2025-06-27 09:49:57.714 ReferenceMachine INFO: setHomed(false)
+2025-06-27 09:49:57.715 GcodeDriver TRACE: Send-on-change logic for Feed Rate, Acceleration and Jerk reset
+2025-06-27 09:49:57.716 AbstractMotionPlanner DEBUG: Reported location changes current location from (X:9.050000, Y:0.000000, Z1:20.000000, C1:0.000000, C2:0.000000) to (X:0.000000, Y:0.000000, Z1:0.000000, C1:0.000000, C2:0.000000)
+2025-06-27 09:49:57.717 Scripting TRACE: Scripting.on Machine.AfterDriverHoming
+2025-06-27 09:49:57.717 ReferenceHead DEBUG: H1.home()
+2025-06-27 09:49:57.717 ReferenceNozzle DEBUG: N1.home()
+2025-06-27 09:49:57.718 ReferenceNozzle DEBUG: N2.home()
+2025-06-27 09:49:57.718 Scripting TRACE: Scripting.on Machine.AfterHoming
+2025-06-27 09:49:57.718 ReferenceMachine INFO: setHomed(true)
+2025-06-27 09:49:57.719 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:00.685 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, -1.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:00.687 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-1.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:00.693 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:00.693 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z-1F1000
+2025-06-27 09:50:00.695 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:01.113 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, -2.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:01.114 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-2.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:01.122 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:01.122 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z-2F1000
+2025-06-27 09:50:01.123 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:01.314 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, -3.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:01.316 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-3.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:01.324 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:01.324 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z-3F1000
+2025-06-27 09:50:01.325 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:03.003 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, -2.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:03.004 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-2.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:03.010 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:03.010 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z-2F1000
+2025-06-27 09:50:03.012 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:03.219 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, -1.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:03.221 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-1.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:03.227 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:03.227 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z-1F1000
+2025-06-27 09:50:03.228 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:03.415 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:03.417 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:03.422 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:03.422 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z0F1000
+2025-06-27 09:50:03.424 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:03.595 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 1.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:03.596 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z1.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:03.603 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:03.603 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z1F1000
+2025-06-27 09:50:03.604 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:04.472 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:04.473 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:04.479 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:04.479 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z0F1000
+2025-06-27 09:50:04.480 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:04.682 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, -1.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:04.683 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-1.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:04.688 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:04.688 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z-1F1000
+2025-06-27 09:50:04.689 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:04.864 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, -2.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:04.866 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-2.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:04.870 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:04.870 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z-2F1000
+2025-06-27 09:50:04.872 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:05.050 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, -3.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:05.051 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-3.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:05.057 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:05.057 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z-3F1000
+2025-06-27 09:50:05.059 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:05.222 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, -4.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:05.223 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-4.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:05.235 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:05.235 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z-4F1000
+2025-06-27 09:50:05.236 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:06.151 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, -3.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:06.154 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-3.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:06.161 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:06.161 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z-3F1000
+2025-06-27 09:50:06.163 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:06.347 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, -2.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:06.349 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-2.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:06.354 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:06.354 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z-2F1000
+2025-06-27 09:50:06.355 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:06.550 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, -1.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:06.551 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-1.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:06.557 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:06.558 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z-1F1000
+2025-06-27 09:50:06.559 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:06.730 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:06.731 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:06.744 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:06.744 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z0F1000
+2025-06-27 09:50:06.745 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:06.909 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 1.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:06.911 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z1.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:06.922 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:06.923 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z1F1000
+2025-06-27 09:50:06.924 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:07.090 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 2.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:07.091 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z2.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:07.103 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:07.103 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z2F1000
+2025-06-27 09:50:07.104 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:07.270 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 3.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:07.271 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z3.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:07.276 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:07.276 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z3F1000
+2025-06-27 09:50:07.277 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:07.434 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 4.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:07.437 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z4.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:07.442 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:07.442 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z4F1000
+2025-06-27 09:50:07.443 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:07.607 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 5.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:07.609 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z5.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:07.614 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:07.614 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z5F1000
+2025-06-27 09:50:07.615 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:07.757 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 6.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:07.759 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z6.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:07.764 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:07.764 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z6F1000
+2025-06-27 09:50:07.765 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:07.915 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 7.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:07.916 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z7.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:07.921 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:07.921 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z7F1000
+2025-06-27 09:50:07.922 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:08.081 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 8.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:08.083 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z8.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:08.090 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:08.090 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z8F1000
+2025-06-27 09:50:08.091 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:08.215 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 9.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:08.216 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z9.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:08.225 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:08.225 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z9F1000
+2025-06-27 09:50:08.227 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:08.380 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 10.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:08.381 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z10.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:08.398 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:08.398 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z10F1000
+2025-06-27 09:50:08.399 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:08.536 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 11.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:08.538 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z11.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:08.549 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:08.549 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z11F1000
+2025-06-27 09:50:08.550 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:08.727 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 12.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:08.729 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z12.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:08.733 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:08.734 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z12F1000
+2025-06-27 09:50:08.734 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:08.898 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 13.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:08.899 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z13.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:08.905 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:08.905 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z13F1000
+2025-06-27 09:50:08.906 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:09.077 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 14.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:09.079 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z14.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:09.084 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:09.084 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z14F1000
+2025-06-27 09:50:09.085 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:09.273 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 15.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:09.274 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z15.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:09.279 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:09.279 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z15F1000
+2025-06-27 09:50:09.280 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:09.422 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 16.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:09.424 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z16.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:09.428 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:09.428 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z16F1000
+2025-06-27 09:50:09.430 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:09.605 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 17.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:09.606 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z17.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:09.612 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:09.612 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z17F1000
+2025-06-27 09:50:09.613 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:09.753 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 18.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:09.754 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z18.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:09.765 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:09.765 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z18F1000
+2025-06-27 09:50:09.766 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:09.955 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 19.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:09.956 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z19.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:09.975 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:09.976 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z19F1000
+2025-06-27 09:50:09.977 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:10.119 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 20.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:10.121 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z20.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:10.128 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:10.128 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z20F1000
+2025-06-27 09:50:10.129 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:10.292 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 21.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:10.294 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z21.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:10.298 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:10.298 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z21F1000
+2025-06-27 09:50:10.299 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:10.458 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 22.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:10.459 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z22.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:10.467 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:10.467 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z22F1000
+2025-06-27 09:50:10.468 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:10.623 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 23.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:10.624 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z23.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:10.629 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:10.629 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z23F1000
+2025-06-27 09:50:10.630 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:10.794 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 24.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:10.796 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z24.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:10.801 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:10.803 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z24F1000
+2025-06-27 09:50:10.804 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:10.938 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 25.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:10.939 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z25.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:10.946 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:10.946 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z25F1000
+2025-06-27 09:50:10.947 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:11.080 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 26.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:11.081 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z26.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:11.087 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:11.088 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z26F1000
+2025-06-27 09:50:11.089 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:11.275 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 27.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:11.276 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z27.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:11.290 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:11.290 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z27F1000
+2025-06-27 09:50:11.291 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:11.425 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 28.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:11.426 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z28.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:11.437 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:11.437 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z28F1000
+2025-06-27 09:50:11.438 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:11.598 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 29.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:11.599 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z29.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:11.608 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:11.608 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z29F1000
+2025-06-27 09:50:11.609 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:11.770 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 30.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:11.771 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z30.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:11.776 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:11.776 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z30F1000
+2025-06-27 09:50:11.778 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:11.956 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 31.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:11.959 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z31.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:11.968 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:11.969 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z31F1000
+2025-06-27 09:50:11.970 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:12.145 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 32.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:12.146 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z32.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:12.153 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:12.153 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z32F1000
+2025-06-27 09:50:12.153 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:12.327 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 33.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:12.329 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z33.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:12.335 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:12.335 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z33F1000
+2025-06-27 09:50:12.336 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:12.497 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 34.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:12.498 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z34.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:12.503 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:12.503 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z34F1000
+2025-06-27 09:50:12.504 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:12.684 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 35.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:12.686 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z35.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:12.704 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:12.704 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z35F1000
+2025-06-27 09:50:12.705 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:12.864 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 36.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:12.866 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z36.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:12.879 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:12.879 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z36F1000
+2025-06-27 09:50:12.880 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:13.045 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 37.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:13.046 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z37.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:13.059 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:13.059 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z37F1000
+2025-06-27 09:50:13.060 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:13.179 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:13.181 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z38.0000 F1000.00 ; move to target, 20000
+2025-06-27 09:50:13.186 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:13.186 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1{A:A%.4f}{B:B%.4f}Z38F1000
+2025-06-27 09:50:13.188 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:22.945 AbstractHeadMountable DEBUG: N1.moveTo((1.000000, 0.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:22.947 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X1.0000  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:22.963 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:22.963 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X1{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:22.965 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:23.838 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:23.840 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0000  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:23.845 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:23.846 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:23.847 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:24.618 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, -1.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:24.620 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y-1.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:24.626 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:24.626 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y-1{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:24.627 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:29.883 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:29.885 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y0.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:29.901 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:29.902 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y0{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:29.903 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:30.506 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 1.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:30.508 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y1.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:30.516 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:30.516 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y1{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:30.518 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:30.994 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 2.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:30.996 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y2.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:31.006 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:31.006 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y2{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:31.007 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:31.495 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 3.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:31.497 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y3.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:31.502 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:31.502 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y3{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:31.503 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:31.946 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 4.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:31.947 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y4.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:31.955 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:31.955 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y4{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:31.956 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:32.365 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 5.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:32.366 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y5.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:32.376 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:32.377 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y5{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:32.378 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:33.400 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 4.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:33.401 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y4.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:33.437 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:33.437 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y4{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:33.438 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:33.663 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 3.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:33.665 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y3.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:33.674 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:33.674 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y3{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:33.675 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:33.850 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 2.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:33.851 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y2.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:33.926 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:33.927 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y2{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:33.928 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:44.799 ReferenceMachine DEBUG: setEnabled(false)
+2025-06-27 09:50:44.800 ReferenceMachine INFO: setHomed(false)
+2025-06-27 09:50:44.800 ReferenceActuator DEBUG: LIGHT_BOTTOM.actuate(false)
+2025-06-27 09:50:44.801 ReferenceActuator DEBUG: LIGHT_TOP.actuate(false)
+2025-06-27 09:50:44.817 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:48.797 ReferenceMachine DEBUG: setEnabled(true)
+2025-06-27 09:50:48.798 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> M114, -1
+2025-06-27 09:50:48.807 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << X:0.000 Y:2.000 Z:38.000 E:0.000 E0:0.0 E1:0.0 Count 0 2560 3040 Machine 0.000 2.000 38.000 Bed comp 0.000
+2025-06-27 09:50:48.807 GcodeDriver TRACE: Position report: X:0.000 Y:2.000 Z:38.000 E:0.000 E0:0.0 E1:0.0 Count 0 2560 3040 Machine 0.000 2.000 38.000 Bed comp 0.000
+2025-06-27 09:50:48.808 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:48.808 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed M114
+2025-06-27 09:50:48.808 GcodeDriver TRACE: GcodeDriver got lastReportedLocation (X:0.000000, Y:2.000000, Z1:38.000000, C1:0.000000, C2:0.000000)
+2025-06-27 09:50:48.820 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:50.448 AbstractHeadMountable DEBUG: N1.moveTo((1.000000, 2.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:50.450 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X1.0000  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:50.455 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:50.455 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X1{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:50.456 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:51.273 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 2.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:51.275 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0000  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:51.280 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:51.280 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:51.282 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:51.820 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 3.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:51.822 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y3.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:51.827 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:51.827 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y3{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:51.828 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:52.354 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 2.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:52.355 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y2.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:52.371 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:52.371 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y2{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:52.374 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:52.960 ReferenceMachine DEBUG: setEnabled(false)
+2025-06-27 09:50:52.960 ReferenceMachine INFO: setHomed(false)
+2025-06-27 09:50:52.960 ReferenceActuator DEBUG: LIGHT_BOTTOM.actuate(false)
+2025-06-27 09:50:52.961 ReferenceActuator DEBUG: LIGHT_TOP.actuate(false)
+2025-06-27 09:50:52.972 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:57.190 ReferenceMachine DEBUG: setEnabled(true)
+2025-06-27 09:50:57.190 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> M114, -1
+2025-06-27 09:50:57.203 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << X:0.000 Y:2.000 Z:38.000 E:0.000 E0:0.0 E1:0.0 Count 0 2560 3040 Machine 0.000 2.000 38.000 Bed comp 0.000
+2025-06-27 09:50:57.203 GcodeDriver TRACE: Position report: X:0.000 Y:2.000 Z:38.000 E:0.000 E0:0.0 E1:0.0 Count 0 2560 3040 Machine 0.000 2.000 38.000 Bed comp 0.000
+2025-06-27 09:50:57.203 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:57.203 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed M114
+2025-06-27 09:50:57.203 GcodeDriver TRACE: GcodeDriver got lastReportedLocation (X:0.000000, Y:2.000000, Z1:38.000000, C1:0.000000, C2:0.000000)
+2025-06-27 09:50:57.214 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:58.339 AbstractHeadMountable DEBUG: N1.moveTo((1.000000, 2.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:58.340 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X1.0000  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:58.346 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:58.346 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X1{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:58.348 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:58.984 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 2.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:58.986 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1 X0.0000  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:59.002 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:59.002 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1X0{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:59.003 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:50:59.665 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 3.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:50:59.667 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y3.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:50:59.673 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:50:59.674 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y3{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:50:59.675 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:51:00.160 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 2.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:51:00.162 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y2.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:51:00.167 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:51:00.167 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y2{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:51:00.169 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:51:00.387 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 1.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:51:00.389 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y1.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:51:00.401 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:51:00.402 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y1{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:51:00.403 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:51:00.634 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:51:00.635 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y0.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:51:00.701 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:51:00.701 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y0{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:51:00.703 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:51:01.274 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 1.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:51:01.275 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y1.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:51:01.283 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:51:01.283 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y1{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:51:01.284 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:51:01.445 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 2.000000, 38.000000, 0.000000 mm), 1.0)
+2025-06-27 09:51:01.446 GcodeDriver DEBUG: [GcodeDriver:192.168.0.127:23] >> G1  Y2.0000 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target, 20000
+2025-06-27 09:51:01.452 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] << ok
+2025-06-27 09:51:01.452 GcodeDriver TRACE: [GcodeDriver:192.168.0.127:23] confirmed G1Y2{A:A%.4f}{B:B%.4f}F1000
+2025-06-27 09:51:01.453 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:51:02.642 MainFrame INFO: Shutting down...
+2025-06-27 09:51:03.061 ReferenceMachine DEBUG: setEnabled(false)
+2025-06-27 09:51:03.062 ReferenceMachine INFO: setHomed(false)
+2025-06-27 09:51:03.063 ReferenceActuator DEBUG: LIGHT_BOTTOM.actuate(false)
+2025-06-27 09:51:03.063 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:51:03.065 ReferenceActuator DEBUG: LIGHT_TOP.actuate(false)
+2025-06-27 09:51:03.066 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:51:03.084 GcodeDriver$ReaderThread TRACE: [GcodeDriver:192.168.0.127:23] Read error while disconnecting (expected)
+2025-06-27 09:51:03.084 AbstractBroadcastingCamera TRACE: Camera Bottom thread 113 bye-bye.
+2025-06-27 09:51:03.085 AbstractBroadcastingCamera TRACE: Camera Top thread 111 bye-bye.
+2025-06-27 09:51:03.085 MainFrame INFO: Shutdown complete, exiting.

@@ -1,0 +1,92 @@
+2025-06-27 09:09:23.713 Main INFO: Bienvenue, Bienvenido, Willkommen, Hello, Namaskar, Welkom, Bonjour to OpenPnP version 2025-02-02_20-41-38.e468422.
+2025-06-27 09:09:23.715 Scripting TRACE: Scripting.on Startup
+2025-06-27 09:09:23.729 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-06-27 09:09:23.730 CameraView DEBUG: No reticle preference found.
+2025-06-27 09:09:24.663 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-06-27 09:09:24.664 CameraView DEBUG: No reticle preference found.
+2025-06-27 09:09:24.672 AbstractBroadcastingCamera TRACE: Camera Top thread 111 started.
+2025-06-27 09:09:24.673 AbstractBroadcastingCamera TRACE: Camera Bottom thread 113 started.
+2025-06-27 09:09:51.812 ReferenceMachine DEBUG: setEnabled(true)
+2025-06-27 09:09:51.817 GcodeDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] Connect
+2025-06-27 09:09:51.913 GcodeDriver TRACE: GcodeAsyncDriver waiting for connection 3000ms
+2025-06-27 09:09:54.914 GcodeDriver TRACE: Send-on-change logic for Feed Rate, Acceleration and Jerk reset
+2025-06-27 09:09:54.976 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:10:00.853 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2025-06-27 09:10:00.854 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2025-06-27 09:10:00.855 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2025-06-27 09:10:00.855 AbstractHeadMountable DEBUG: Top.moveToSafeZ(1.0)
+2025-06-27 09:10:00.856 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:10:00.860 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:10:05.637 ReferenceMachine DEBUG: homing machine
+2025-06-27 09:10:05.641 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G28 Z
+2025-06-27 09:10:05.644 GcodeDriver TRACE: Send-on-change logic for Feed Rate, Acceleration and Jerk reset
+2025-06-27 09:10:05.644 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G28Z
+2025-06-27 09:10:05.644 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> M114
+2025-06-27 09:10:06.175 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 09:10:06.176 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed G28Z
+2025-06-27 09:10:06.178 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> M114
+2025-06-27 09:10:06.191 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << X:0.000 Y:0.000 Z:0.000 E:0.000 E0:0.0 E1:0.0 Count 0 0 0 Machine 0.000 0.000 0.000 Bed comp 0.000
+2025-06-27 09:10:06.192 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 09:11:05.656 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: GcodeAsyncDriver timeout waiting for response to M114
+	at org.openpnp.machine.reference.driver.GcodeDriver.getReportedLocation(GcodeDriver.java:775)
+	at org.openpnp.machine.reference.driver.GcodeAsyncDriver.waitForCompletion(GcodeAsyncDriver.java:383)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForDriverCompletion(AbstractMotionPlanner.java:852)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForCompletion(AbstractMotionPlanner.java:763)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.home(AbstractMotionPlanner.java:114)
+	at org.openpnp.machine.reference.ReferenceMachine.home(ReferenceMachine.java:534)
+	at org.openpnp.gui.MachineControlsPanel$HomeAction.lambda$actionPerformed$0(MachineControlsPanel.java:420)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-27 09:11:05.658 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:11:05.664 MessageBoxes DEBUG: Error: java.lang.Exception: GcodeAsyncDriver timeout waiting for response to M114
+2025-06-27 09:11:46.912 ReferenceMachine DEBUG: setEnabled(false)
+2025-06-27 09:11:46.913 ReferenceMachine INFO: setHomed(false)
+2025-06-27 09:11:46.914 ReferenceActuator DEBUG: LIGHT_TOP.actuate(false)
+2025-06-27 09:11:46.914 ReferenceActuator DEBUG: LIGHT_BOTTOM.actuate(false)
+2025-06-27 09:11:46.915 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed M114
+2025-06-27 09:11:46.918 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] Read error while disconnecting (expected)
+2025-06-27 09:11:47.029 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] disconnectRequested, bye-bye.
+2025-06-27 09:11:47.076 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:11:48.069 ReferenceMachine DEBUG: setEnabled(true)
+2025-06-27 09:11:48.070 GcodeDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] Connect
+2025-06-27 09:11:48.133 GcodeDriver TRACE: GcodeAsyncDriver waiting for connection 3000ms
+2025-06-27 09:11:51.134 GcodeDriver TRACE: Send-on-change logic for Feed Rate, Acceleration and Jerk reset
+2025-06-27 09:11:51.135 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> M114
+2025-06-27 09:11:51.137 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> M114
+2025-06-27 09:11:51.153 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << X:0.000 Y:0.000 Z:0.000 E:0.000 E0:0.0 E1:0.0 Count 0 0 0 Machine 0.000 0.000 0.000 Bed comp 0.000
+2025-06-27 09:11:51.154 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 09:11:54.598 GcodeDriver DEBUG: === Detecting firmware and position reporting, please ignore any errors and warnings.
+2025-06-27 09:11:54.599 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> M115
+2025-06-27 09:11:54.599 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed M114
+2025-06-27 09:11:54.600 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> M115
+2025-06-27 09:11:54.690 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << FIRMWARE_NAME: RepRapFirmware for Duet 2 WiFi/Ethernet FIRMWARE_VERSION: 3.6.0 ELECTRONICS: Duet WiFi 1.02 or later FIRMWARE_DATE: 2025-05-25 08:04:38
+2025-06-27 09:11:54.691 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 09:11:54.691 GcodeDriver TRACE: GcodeAsyncDriver got response matching "^.*FIRMWARE.*" after 91ms
+2025-06-27 09:11:54.693 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> M114
+2025-06-27 09:11:54.694 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed M115
+2025-06-27 09:11:54.695 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> M114
+2025-06-27 09:11:54.706 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << X:0.000 Y:0.000 Z:0.000 E:0.000 E0:0.0 E1:0.0 Count 0 0 0 Machine 0.000 0.000 0.000 Bed comp 0.000
+2025-06-27 09:11:54.707 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 09:11:54.707 GcodeDriver TRACE: GcodeAsyncDriver got response matching ".*[XYZABCDEUVW]:-?\d+\.\d+.*" after 13ms
+2025-06-27 09:11:54.708 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> M584
+2025-06-27 09:11:54.709 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed M114
+2025-06-27 09:11:54.709 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> M584
+2025-06-27 09:11:54.719 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << Driver assignments: X0 Y1 Z2 E3:4, 3 axes visible
+2025-06-27 09:11:54.720 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 09:11:54.720 GcodeDriver TRACE: GcodeAsyncDriver got response matching "^Driver assignments:.*" after 12ms
+2025-06-27 09:11:54.723 GcodeDriver DEBUG: === End detecting firmware and position reporting.
+2025-06-27 09:12:05.623 MainFrame INFO: Shutting down...
+2025-06-27 09:12:05.915 ReferenceMachine DEBUG: setEnabled(false)
+2025-06-27 09:12:05.915 ReferenceMachine INFO: setHomed(false)
+2025-06-27 09:12:05.916 AbstractMachine TRACE: Machine not enabled, task ignored.
+2025-06-27 09:12:05.916 AbstractMachine TRACE: Machine not enabled, task ignored.
+2025-06-27 09:12:05.917 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed M584
+2025-06-27 09:12:05.919 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] Read error while disconnecting (expected)
+2025-06-27 09:12:06.027 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] disconnectRequested, bye-bye.
+2025-06-27 09:12:06.033 AbstractBroadcastingCamera TRACE: Camera Bottom thread 113 bye-bye.
+2025-06-27 09:12:06.034 AbstractBroadcastingCamera TRACE: Camera Top thread 111 bye-bye.
+2025-06-27 09:12:06.035 MainFrame INFO: Shutdown complete, exiting.

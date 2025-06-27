@@ -1,0 +1,90 @@
+2025-06-27 09:30:33.757 Main INFO: Bienvenue, Bienvenido, Willkommen, Hello, Namaskar, Welkom, Bonjour to OpenPnP version 2025-02-02_20-41-38.e468422.
+2025-06-27 09:30:33.760 Scripting TRACE: Scripting.on Startup
+2025-06-27 09:30:33.779 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-06-27 09:30:33.780 CameraView DEBUG: No reticle preference found.
+2025-06-27 09:30:34.720 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-06-27 09:30:34.721 CameraView DEBUG: No reticle preference found.
+2025-06-27 09:30:34.729 AbstractBroadcastingCamera TRACE: Camera Bottom thread 113 started.
+2025-06-27 09:30:34.730 AbstractBroadcastingCamera TRACE: Camera Top thread 111 started.
+2025-06-27 09:32:48.037 ReferenceMachine DEBUG: setEnabled(true)
+2025-06-27 09:32:48.038 GcodeDriver DEBUG: [GcodeDriver:] Connect
+2025-06-27 09:32:48.041 GcodeDriver TRACE: GcodeDriver waiting for connection 3000ms
+2025-06-27 09:32:48.041 GcodeDriver$ReaderThread ERROR: [GcodeDriver:] Read error: java.io.IOException: Read error.
+	at org.openpnp.machine.reference.driver.SerialPortCommunications.read(SerialPortCommunications.java:150)
+	at org.openpnp.machine.reference.driver.ReferenceDriverCommunications.readUntil(ReferenceDriverCommunications.java:108)
+	at org.openpnp.machine.reference.driver.ReferenceDriverCommunications.readLine(ReferenceDriverCommunications.java:86)
+	at org.openpnp.machine.reference.driver.GcodeDriver$ReaderThread.run(GcodeDriver.java:1487)
+2025-06-27 09:32:51.043 GcodeDriver TRACE: Send-on-change logic for Feed Rate, Acceleration and Jerk reset
+2025-06-27 09:32:51.060 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:32:54.775 ReferenceMachine DEBUG: homing machine
+2025-06-27 09:32:54.778 GcodeDriver TRACE: Send-on-change logic for Feed Rate, Acceleration and Jerk reset
+2025-06-27 09:32:54.778 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: Axis C1 has no driver set.
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.home(AbstractMotionPlanner.java:106)
+	at org.openpnp.machine.reference.ReferenceMachine.home(ReferenceMachine.java:534)
+	at org.openpnp.gui.MachineControlsPanel$HomeAction.lambda$actionPerformed$0(MachineControlsPanel.java:420)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-27 09:32:54.781 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:32:54.781 MessageBoxes DEBUG: Error: java.lang.Exception: Axis C1 has no driver set.
+2025-06-27 09:32:59.118 ReferenceMachine DEBUG: setEnabled(false)
+2025-06-27 09:32:59.119 ReferenceMachine INFO: setHomed(false)
+2025-06-27 09:32:59.120 ReferenceActuator DEBUG: LIGHT_TOP.actuate(false)
+2025-06-27 09:32:59.121 ReferenceActuator DEBUG: LIGHT_BOTTOM.actuate(false)
+2025-06-27 09:32:59.134 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:33:27.604 ReferenceMachine DEBUG: setEnabled(true)
+2025-06-27 09:33:27.604 GcodeDriver DEBUG: [GcodeDriver:] Connect
+2025-06-27 09:33:27.605 GcodeDriver TRACE: GcodeDriver waiting for connection 3000ms
+2025-06-27 09:33:27.605 GcodeDriver$ReaderThread ERROR: [GcodeDriver:] Read error: java.io.IOException: Read error.
+	at org.openpnp.machine.reference.driver.SerialPortCommunications.read(SerialPortCommunications.java:150)
+	at org.openpnp.machine.reference.driver.ReferenceDriverCommunications.readUntil(ReferenceDriverCommunications.java:108)
+	at org.openpnp.machine.reference.driver.ReferenceDriverCommunications.readLine(ReferenceDriverCommunications.java:86)
+	at org.openpnp.machine.reference.driver.GcodeDriver$ReaderThread.run(GcodeDriver.java:1487)
+2025-06-27 09:33:30.606 GcodeDriver TRACE: Send-on-change logic for Feed Rate, Acceleration and Jerk reset
+2025-06-27 09:33:30.649 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:33:47.680 ReferenceMachine DEBUG: homing machine
+2025-06-27 09:33:47.681 GcodeDriver TRACE: Send-on-change logic for Feed Rate, Acceleration and Jerk reset
+2025-06-27 09:33:47.682 Scripting TRACE: Scripting.on Machine.AfterDriverHoming
+2025-06-27 09:33:47.682 ReferenceHead DEBUG: H1.home()
+2025-06-27 09:33:47.683 ReferenceNozzle DEBUG: N1.home()
+2025-06-27 09:33:47.683 ReferenceNozzle DEBUG: N2.home()
+2025-06-27 09:33:47.683 Scripting TRACE: Scripting.on Machine.AfterHoming
+2025-06-27 09:33:47.684 ReferenceMachine INFO: setHomed(true)
+2025-06-27 09:33:47.684 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:33:52.260 AbstractHeadMountable DEBUG: N1.moveTo((0.010000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 09:33:52.275 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: GcodeDriver: IO Error on reading from the controller.
+	at org.openpnp.machine.reference.driver.GcodeDriver.bailOnError(GcodeDriver.java:1280)
+	at org.openpnp.machine.reference.driver.GcodeDriver.sendCommand(GcodeDriver.java:1224)
+	at org.openpnp.machine.reference.driver.GcodeDriver.sendGcode(GcodeDriver.java:1214)
+	at org.openpnp.machine.reference.driver.GcodeDriver.sendGcode(GcodeDriver.java:1196)
+	at org.openpnp.machine.reference.driver.GcodeDriver.moveTo(GcodeDriver.java:995)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.executeMoveTo(AbstractMotionPlanner.java:504)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.executeMotionPlan(AbstractMotionPlanner.java:462)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForCompletion(AbstractMotionPlanner.java:759)
+	at org.openpnp.machine.reference.driver.NullMotionPlanner.moveTo(NullMotionPlanner.java:50)
+	at org.openpnp.machine.reference.ReferenceHead.moveTo(ReferenceHead.java:157)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:243)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:280)
+	at org.openpnp.gui.JogControlsPanel.jogTool(JogControlsPanel.java:216)
+	at org.openpnp.gui.JogControlsPanel.lambda$jog$0(JogControlsPanel.java:167)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-27 09:33:52.276 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:33:52.276 MessageBoxes DEBUG: Error: java.lang.Exception: GcodeDriver: IO Error on reading from the controller.
+2025-06-27 09:33:58.510 MainFrame INFO: Shutting down...
+2025-06-27 09:33:58.709 ReferenceMachine DEBUG: setEnabled(false)
+2025-06-27 09:33:58.710 ReferenceMachine INFO: setHomed(false)
+2025-06-27 09:33:58.711 ReferenceActuator DEBUG: LIGHT_TOP.actuate(false)
+2025-06-27 09:33:58.713 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:33:58.715 ReferenceActuator DEBUG: LIGHT_BOTTOM.actuate(false)
+2025-06-27 09:33:58.715 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 09:33:58.725 AbstractBroadcastingCamera TRACE: Camera Bottom thread 113 bye-bye.
+2025-06-27 09:33:58.725 AbstractBroadcastingCamera TRACE: Camera Top thread 111 bye-bye.
+2025-06-27 09:33:58.726 MainFrame INFO: Shutdown complete, exiting.

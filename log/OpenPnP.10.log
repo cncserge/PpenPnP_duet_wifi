@@ -1,0 +1,194 @@
+2025-06-27 00:04:00.514 Main INFO: Bienvenue, Bienvenido, Willkommen, Hello, Namaskar, Welkom, Bonjour to OpenPnP version 2025-02-02_20-41-38.e468422.
+2025-06-27 00:04:00.516 Scripting TRACE: Scripting.on Startup
+2025-06-27 00:04:00.526 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-06-27 00:04:00.527 CameraView DEBUG: No reticle preference found.
+2025-06-27 00:04:01.457 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-06-27 00:04:01.458 CameraView DEBUG: No reticle preference found.
+2025-06-27 00:04:01.466 AbstractBroadcastingCamera TRACE: Camera Bottom thread 113 started.
+2025-06-27 00:04:01.466 AbstractBroadcastingCamera TRACE: Camera Top thread 111 started.
+2025-06-27 00:04:07.326 ReferenceMachine DEBUG: setEnabled(true)
+2025-06-27 00:04:07.330 GcodeDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] Connect
+2025-06-27 00:04:07.349 GcodeDriver TRACE: GcodeAsyncDriver waiting for connection 3000ms
+2025-06-27 00:04:10.351 GcodeDriver TRACE: Send-on-change logic for Feed Rate, Acceleration and Jerk reset
+2025-06-27 00:04:10.390 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:04:22.846 AbstractHeadMountable DEBUG: N1.moveTo((0.010000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 00:04:22.847 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: Machine not homed. Jogging only allowed if driver GcodeAsyncDriver has option "Sync. Initial Location" enabled.
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.moveTo(AbstractMotionPlanner.java:173)
+	at org.openpnp.machine.reference.driver.NullMotionPlanner.moveTo(NullMotionPlanner.java:48)
+	at org.openpnp.machine.reference.ReferenceHead.moveTo(ReferenceHead.java:157)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:243)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:280)
+	at org.openpnp.gui.JogControlsPanel.jogTool(JogControlsPanel.java:216)
+	at org.openpnp.gui.JogControlsPanel.lambda$jog$0(JogControlsPanel.java:167)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-27 00:04:22.849 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:04:22.851 MessageBoxes DEBUG: Error: java.lang.Exception: Machine not homed. Jogging only allowed if driver GcodeAsyncDriver has option "Sync. Initial Location" enabled.
+2025-06-27 00:04:26.354 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+	at org.openpnp.machine.reference.driver.GcodeDriver.getReportedLocation(GcodeDriver.java:760)
+	at org.openpnp.machine.reference.driver.wizards.AbstractReferenceDriverConfigurationWizard.lambda$saveToModel$0(AbstractReferenceDriverConfigurationWizard.java:404)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-27 00:04:26.355 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:04:26.364 MessageBoxes DEBUG: Error: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+2025-06-27 00:04:28.707 AbstractHeadMountable DEBUG: N1.moveTo((0.010000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 00:04:28.723 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X0.0100  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-27 00:04:28.725 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X0.0100  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-27 00:04:28.727 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:04:28.731 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 00:04:30.559 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 00:04:30.565 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X0.0000  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-27 00:04:30.565 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed G1 X0.0100  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-27 00:04:30.566 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X0.0000  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-27 00:04:30.566 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:04:30.571 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 00:04:31.377 AbstractHeadMountable DEBUG: N1.moveTo((-0.010000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 00:04:31.381 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X-0.0100  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-27 00:04:31.382 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed G1 X0.0000  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-27 00:04:31.382 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X-0.0100  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-27 00:04:31.382 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:04:31.388 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 00:04:35.014 AbstractHeadMountable DEBUG: N1.moveTo((9.990000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 00:04:35.027 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X9.9900  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-27 00:04:35.028 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed G1 X-0.0100  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-27 00:04:35.028 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X9.9900  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-27 00:04:35.029 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:04:35.032 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 00:04:36.086 AbstractHeadMountable DEBUG: N1.moveTo((19.990000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 00:04:36.089 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X19.9900  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-27 00:04:36.090 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed G1 X9.9900  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-27 00:04:36.090 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X19.9900  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-27 00:04:36.091 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:04:36.095 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 00:04:37.803 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2025-06-27 00:04:37.804 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2025-06-27 00:04:37.804 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2025-06-27 00:04:37.805 AbstractHeadMountable DEBUG: Top.moveToSafeZ(1.0)
+2025-06-27 00:04:37.806 AbstractHeadMountable DEBUG: N1.moveTo((19.990000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 00:04:37.807 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+	at org.openpnp.machine.reference.driver.GcodeDriver.getReportedLocation(GcodeDriver.java:760)
+	at org.openpnp.machine.reference.driver.GcodeAsyncDriver.waitForCompletion(GcodeAsyncDriver.java:383)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForDriverCompletion(AbstractMotionPlanner.java:846)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForCompletion(AbstractMotionPlanner.java:763)
+	at org.openpnp.machine.reference.driver.NullMotionPlanner.moveTo(NullMotionPlanner.java:50)
+	at org.openpnp.machine.reference.ReferenceHead.moveTo(ReferenceHead.java:157)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:243)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:280)
+	at org.openpnp.gui.JogControlsPanel$12.lambda$actionPerformed$0(JogControlsPanel.java:569)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-27 00:04:37.808 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:04:37.808 MessageBoxes DEBUG: Error: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+2025-06-27 00:04:42.327 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+	at org.openpnp.machine.reference.driver.GcodeDriver.getReportedLocation(GcodeDriver.java:760)
+	at org.openpnp.machine.reference.driver.wizards.AbstractReferenceDriverConfigurationWizard.lambda$saveToModel$0(AbstractReferenceDriverConfigurationWizard.java:404)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-27 00:04:42.327 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:04:42.336 MessageBoxes DEBUG: Error: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+2025-06-27 00:04:45.558 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2025-06-27 00:04:45.559 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2025-06-27 00:04:45.559 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2025-06-27 00:04:45.560 AbstractHeadMountable DEBUG: Top.moveToSafeZ(1.0)
+2025-06-27 00:04:45.561 AbstractHeadMountable DEBUG: N1.moveTo((19.990000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 00:04:45.562 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:04:47.299 AbstractHeadMountable DEBUG: N1.moveTo((19.990000, 0.000000, -10.000000, 0.000000 mm), 1.0)
+2025-06-27 00:04:47.302 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z-10.0000 F1000.00 ; move to target
+2025-06-27 00:04:47.303 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed G1 X19.9900  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-27 00:04:47.303 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-10.0000 F1000.00 ; move to target
+2025-06-27 00:04:47.304 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:04:47.307 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 00:04:48.633 AbstractHeadMountable DEBUG: N1.moveTo((19.990000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 00:04:48.635 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-27 00:04:48.636 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed G1   {A:A%.4f} {B:B%.4f} Z-10.0000 F1000.00 ; move to target
+2025-06-27 00:04:48.636 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-27 00:04:48.637 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:04:48.640 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 00:04:49.422 AbstractHeadMountable DEBUG: N1.moveTo((19.990000, 0.000000, 10.000000, 0.000000 mm), 1.0)
+2025-06-27 00:04:49.424 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z10.0000 F1000.00 ; move to target
+2025-06-27 00:04:49.424 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-27 00:04:49.425 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z10.0000 F1000.00 ; move to target
+2025-06-27 00:04:49.426 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:04:49.430 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 00:04:49.643 AbstractHeadMountable DEBUG: N1.moveTo((19.990000, 0.000000, 20.000000, 0.000000 mm), 1.0)
+2025-06-27 00:04:49.645 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z20.0000 F1000.00 ; move to target
+2025-06-27 00:04:49.647 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed G1   {A:A%.4f} {B:B%.4f} Z10.0000 F1000.00 ; move to target
+2025-06-27 00:04:49.648 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z20.0000 F1000.00 ; move to target
+2025-06-27 00:04:49.648 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:04:49.652 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 00:04:51.774 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2025-06-27 00:04:51.775 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2025-06-27 00:04:51.775 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2025-06-27 00:04:51.776 AbstractHeadMountable DEBUG: N2.moveTo((19.990000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 00:04:51.778 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-27 00:04:51.778 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed G1   {A:A%.4f} {B:B%.4f} Z20.0000 F1000.00 ; move to target
+2025-06-27 00:04:51.778 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+	at org.openpnp.machine.reference.driver.GcodeDriver.getReportedLocation(GcodeDriver.java:760)
+	at org.openpnp.machine.reference.driver.GcodeAsyncDriver.waitForCompletion(GcodeAsyncDriver.java:383)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForDriverCompletion(AbstractMotionPlanner.java:846)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForCompletion(AbstractMotionPlanner.java:763)
+	at org.openpnp.machine.reference.driver.NullMotionPlanner.moveTo(NullMotionPlanner.java:50)
+	at org.openpnp.machine.reference.ReferenceHead.moveTo(ReferenceHead.java:157)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:243)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveToSafeZ(AbstractHeadMountable.java:272)
+	at org.openpnp.spi.base.AbstractHead.moveToSafeZ(AbstractHead.java:321)
+	at org.openpnp.machine.reference.ReferenceHead.moveToSafeZ(ReferenceHead.java:148)
+	at org.openpnp.spi.base.AbstractHead.moveToSafeZ(AbstractHead.java:392)
+	at org.openpnp.gui.JogControlsPanel$12.lambda$actionPerformed$0(JogControlsPanel.java:561)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-27 00:04:51.779 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-27 00:04:51.779 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:04:51.784 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 00:04:51.785 MessageBoxes DEBUG: Error: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+2025-06-27 00:05:08.742 AbstractHeadMountable DEBUG: N1.moveTo((29.990000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-27 00:05:08.744 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: Machine not homed. Jogging only allowed if driver GcodeAsyncDriver has option "Sync. Initial Location" enabled.
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.moveTo(AbstractMotionPlanner.java:173)
+	at org.openpnp.machine.reference.driver.NullMotionPlanner.moveTo(NullMotionPlanner.java:48)
+	at org.openpnp.machine.reference.ReferenceHead.moveTo(ReferenceHead.java:157)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:243)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:280)
+	at org.openpnp.gui.JogControlsPanel.jogTool(JogControlsPanel.java:216)
+	at org.openpnp.gui.JogControlsPanel.lambda$jog$0(JogControlsPanel.java:167)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-27 00:05:08.744 AbstractMachine TRACE: Machine entering idle state.
+2025-06-27 00:05:08.744 MessageBoxes DEBUG: Error: java.lang.Exception: Machine not homed. Jogging only allowed if driver GcodeAsyncDriver has option "Sync. Initial Location" enabled.
+2025-06-27 00:05:23.795 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> M114
+2025-06-27 00:05:23.797 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-27 00:05:23.797 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> M114
+2025-06-27 00:05:23.802 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << X:19.990 Y:-0.090 Z:0.000 E:0.000 E0:0.0 E1:0.0 Count 25587 -115 0 Machine 19.990 -0.090 0.000 Bed comp 0.000
+2025-06-27 00:05:23.803 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-27 00:05:38.058 MainFrame INFO: Shutting down...
+2025-06-27 00:05:38.261 ReferenceMachine DEBUG: setEnabled(false)
+2025-06-27 00:05:38.262 ReferenceMachine INFO: setHomed(false)
+2025-06-27 00:05:38.265 GcodeDriver TRACE: [GcodeAsyncDriver:192.168.0.127:23] confirmed M114
+2025-06-27 00:05:38.273 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] Read error while disconnecting (expected)
+2025-06-27 00:05:38.366 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] disconnectRequested, bye-bye.
+2025-06-27 00:05:38.378 AbstractBroadcastingCamera TRACE: Camera Bottom thread 113 bye-bye.
+2025-06-27 00:05:38.378 AbstractBroadcastingCamera TRACE: Camera Top thread 111 bye-bye.
+2025-06-27 00:05:38.378 MainFrame INFO: Shutdown complete, exiting.

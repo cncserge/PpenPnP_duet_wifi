@@ -1,0 +1,757 @@
+2025-06-26 23:55:33.240 Main INFO: Bienvenue, Bienvenido, Willkommen, Hello, Namaskar, Welkom, Bonjour to OpenPnP version 2025-02-02_20-41-38.e468422.
+2025-06-26 23:55:33.242 Scripting TRACE: Scripting.on Startup
+2025-06-26 23:55:33.258 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-06-26 23:55:33.259 CameraView DEBUG: No reticle preference found.
+2025-06-26 23:55:34.235 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-06-26 23:55:34.236 CameraView DEBUG: No reticle preference found.
+2025-06-26 23:55:34.246 AbstractBroadcastingCamera TRACE: Camera Top thread 111 started.
+2025-06-26 23:55:34.246 AbstractBroadcastingCamera TRACE: Camera Bottom thread 113 started.
+2025-06-26 23:55:44.350 ReferenceMachine DEBUG: setEnabled(true)
+2025-06-26 23:55:44.356 GcodeDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] Connect
+2025-06-26 23:55:44.381 GcodeDriver TRACE: GcodeAsyncDriver waiting for connection 3000ms
+2025-06-26 23:55:47.383 GcodeDriver TRACE: Send-on-change logic for Feed Rate, Acceleration and Jerk reset
+2025-06-26 23:55:47.459 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:55:48.692 GcodeDriver DEBUG: === Detecting firmware and position reporting, please ignore any errors and warnings.
+2025-06-26 23:55:48.692 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> M115
+2025-06-26 23:55:48.694 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> M115
+2025-06-26 23:55:48.698 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << FIRMWARE_NAME: RepRapFirmware for Duet 2 WiFi/Ethernet FIRMWARE_VERSION: 3.6.0 ELECTRONICS: Duet WiFi 1.02 or later FIRMWARE_DATE: 2025-05-25 08:04:38
+2025-06-26 23:55:48.699 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:55:48.699 GcodeDriver TRACE: GcodeAsyncDriver got response matching "^.*FIRMWARE.*" after 6ms
+2025-06-26 23:55:48.724 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> M114
+2025-06-26 23:55:48.725 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:55:48.725 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> M114
+2025-06-26 23:55:48.730 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << X:-5.000 Y:19.000 Z:61.500 E:0.000 E0:0.0 E1:0.0 Count -6400 24320 4920 Machine -5.000 19.000 61.500 Bed comp 0.000
+2025-06-26 23:55:48.731 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:55:48.731 GcodeDriver TRACE: GcodeAsyncDriver got response matching ".*[XYZABCDEUVW]:-?\d+\.\d+.*" after 6ms
+2025-06-26 23:55:48.732 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> M584
+2025-06-26 23:55:48.732 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:55:48.732 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> M584
+2025-06-26 23:55:48.740 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << Driver assignments: X0 Y1 Z2 E3:4, 3 axes visible
+2025-06-26 23:55:48.740 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:55:48.740 GcodeDriver TRACE: GcodeAsyncDriver got response matching "^Driver assignments:.*" after 8ms
+2025-06-26 23:55:48.742 GcodeDriver DEBUG: === End detecting firmware and position reporting.
+2025-06-26 23:55:48.742 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:56:20.501 AbstractHeadMountable DEBUG: N1.moveTo((0.010000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:56:20.503 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: Machine not homed. Jogging only allowed if driver GcodeAsyncDriver has option "Sync. Initial Location" enabled.
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.moveTo(AbstractMotionPlanner.java:173)
+	at org.openpnp.machine.reference.driver.NullMotionPlanner.moveTo(NullMotionPlanner.java:48)
+	at org.openpnp.machine.reference.ReferenceHead.moveTo(ReferenceHead.java:157)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:243)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:280)
+	at org.openpnp.gui.JogControlsPanel.jogTool(JogControlsPanel.java:216)
+	at org.openpnp.gui.JogControlsPanel.lambda$jog$0(JogControlsPanel.java:167)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-26 23:56:20.505 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:56:20.506 MessageBoxes DEBUG: Error: java.lang.Exception: Machine not homed. Jogging only allowed if driver GcodeAsyncDriver has option "Sync. Initial Location" enabled.
+2025-06-26 23:56:27.865 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: GcodeAsyncDriver configuration error: missing GET_POSITION_COMMAND.
+	at org.openpnp.machine.reference.driver.GcodeDriver.getReportedLocation(GcodeDriver.java:757)
+	at org.openpnp.machine.reference.driver.wizards.AbstractReferenceDriverConfigurationWizard.lambda$saveToModel$0(AbstractReferenceDriverConfigurationWizard.java:404)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-26 23:56:27.866 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:56:27.872 MessageBoxes DEBUG: Error: java.lang.Exception: GcodeAsyncDriver configuration error: missing GET_POSITION_COMMAND.
+2025-06-26 23:56:47.980 AbstractHeadMountable DEBUG: N1.moveTo((0.010000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:56:47.991 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: GcodeAsyncDriver MOVE_TO_COMMAND missing, please use Issues & Solutions to propose proper G-code commands.
+	at org.openpnp.machine.reference.driver.GcodeDriver.moveTo(GcodeDriver.java:875)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.executeMoveTo(AbstractMotionPlanner.java:504)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.executeMotionPlan(AbstractMotionPlanner.java:462)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForCompletion(AbstractMotionPlanner.java:759)
+	at org.openpnp.machine.reference.driver.NullMotionPlanner.moveTo(NullMotionPlanner.java:50)
+	at org.openpnp.machine.reference.ReferenceHead.moveTo(ReferenceHead.java:157)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:243)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:280)
+	at org.openpnp.gui.JogControlsPanel.jogTool(JogControlsPanel.java:216)
+	at org.openpnp.gui.JogControlsPanel.lambda$jog$0(JogControlsPanel.java:167)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-26 23:56:47.992 AbstractMotionPlanner DEBUG: Reported location changes current location from (X:0.010000, Y:0.000000, Z1:0.000000, C1:0.000000, C2:0.000000) to (X:0.000000, Y:0.000000, Z1:0.000000, C1:0.000000, C2:0.000000)
+2025-06-26 23:56:47.993 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:56:47.996 MessageBoxes DEBUG: Error: java.lang.Exception: GcodeAsyncDriver MOVE_TO_COMMAND missing, please use Issues & Solutions to propose proper G-code commands.
+2025-06-26 23:57:15.070 AbstractHeadMountable DEBUG: N1.moveTo((0.010000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:15.078 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X0.0100  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:15.078 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:15.079 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X0.0100  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:15.080 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:15.094 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:16.074 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:16.079 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X0.0000  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:16.079 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:16.079 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X0.0000  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:16.080 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:16.096 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:16.765 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 0.010000, 0.000000 mm), 1.0)
+2025-06-26 23:57:16.769 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z0.0100 F1000.00 ; move to target
+2025-06-26 23:57:16.769 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:16.769 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z0.0100 F1000.00 ; move to target
+2025-06-26 23:57:16.770 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:16.780 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:21.062 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.000000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:21.066 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-26 23:57:21.066 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:21.067 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-26 23:57:21.067 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:21.076 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:22.749 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:22.753 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1  Y0.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:22.753 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:22.754 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1  Y0.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:22.755 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:22.759 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:24.594 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.020000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:24.598 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1  Y0.0200 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:24.598 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:24.599 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1  Y0.0200 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:24.599 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:24.603 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:25.648 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.030000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:25.650 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1  Y0.0300 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:25.651 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:25.651 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1  Y0.0300 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:25.652 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:25.655 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:26.867 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.020000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:26.870 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1  Y0.0200 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:26.870 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:26.870 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1  Y0.0200 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:26.871 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:26.882 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:27.693 AbstractHeadMountable DEBUG: N1.moveTo((0.000000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:27.695 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1  Y0.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:27.695 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:27.696 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1  Y0.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:27.697 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:27.700 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:29.117 AbstractHeadMountable DEBUG: N1.moveTo((0.010000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:29.119 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X0.0100  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:29.120 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:29.120 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X0.0100  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:29.121 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:29.131 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:30.431 AbstractHeadMountable DEBUG: N1.moveTo((0.020000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:30.433 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X0.0200  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:30.433 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:30.434 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X0.0200  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:30.434 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:30.439 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:31.810 AbstractHeadMountable DEBUG: N1.moveTo((0.030000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:31.812 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X0.0300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:31.812 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:31.813 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X0.0300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:31.813 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:31.827 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:33.775 AbstractHeadMountable DEBUG: N1.moveTo((0.130000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:33.777 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X0.1300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:33.778 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:33.778 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X0.1300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:33.779 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:33.782 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:34.646 AbstractHeadMountable DEBUG: N1.moveTo((0.230000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:34.648 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X0.2300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:34.648 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:34.648 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X0.2300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:34.649 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:34.674 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:35.590 AbstractHeadMountable DEBUG: N1.moveTo((0.330000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:35.592 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X0.3300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:35.592 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:35.593 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X0.3300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:35.593 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:35.598 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:36.310 AbstractHeadMountable DEBUG: N1.moveTo((0.430000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:36.312 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X0.4300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:36.312 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:36.313 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X0.4300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:36.313 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:36.317 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:40.030 AbstractHeadMountable DEBUG: N1.moveTo((1.430000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:40.038 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X1.4300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:40.039 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:40.039 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X1.4300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:40.039 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:40.043 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:41.298 AbstractHeadMountable DEBUG: N1.moveTo((2.430000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:41.302 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X2.4300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:41.303 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:41.303 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X2.4300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:41.304 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:41.314 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:42.490 AbstractHeadMountable DEBUG: N1.moveTo((1.430000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:42.492 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X1.4300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:42.493 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:42.493 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X1.4300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:42.494 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:42.500 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:43.060 AbstractHeadMountable DEBUG: N1.moveTo((0.430000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:43.062 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X0.4300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:43.063 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:43.063 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X0.4300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:43.064 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:43.072 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:43.505 AbstractHeadMountable DEBUG: N1.moveTo((-0.570000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:43.508 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X-0.5700  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:43.508 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:43.508 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X-0.5700  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:43.509 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:43.520 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:43.723 AbstractHeadMountable DEBUG: N1.moveTo((-1.570000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:43.726 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X-1.5700  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:43.726 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:43.726 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X-1.5700  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:43.727 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:43.736 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:43.907 AbstractHeadMountable DEBUG: N1.moveTo((-2.570000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:43.909 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X-2.5700  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:43.909 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:43.909 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X-2.5700  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:43.911 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:43.915 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:44.088 AbstractHeadMountable DEBUG: N1.moveTo((-3.570000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:44.090 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X-3.5700  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:44.090 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:44.090 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X-3.5700  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:44.091 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:44.095 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:44.244 AbstractHeadMountable DEBUG: N1.moveTo((-4.570000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:44.247 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X-4.5700  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:44.247 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:44.248 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X-4.5700  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:44.248 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:44.254 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:44.440 AbstractHeadMountable DEBUG: N1.moveTo((-5.570000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:44.442 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X-5.5700  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:44.442 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:44.443 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X-5.5700  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:44.443 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:44.447 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:44.605 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 0.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:44.607 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X-6.5700  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:44.607 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:44.608 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X-6.5700  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:44.609 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:44.617 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:47.080 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 10.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:47.082 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1  Y10.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:47.083 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:47.083 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1  Y10.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:47.083 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:47.096 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:48.100 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 20.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:48.103 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1  Y20.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:48.103 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:48.103 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1  Y20.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:48.104 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:48.108 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:49.083 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 30.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:49.085 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1  Y30.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:49.085 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:49.085 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1  Y30.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:49.086 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:49.103 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:50.127 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 40.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:50.129 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1  Y40.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:50.129 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:50.129 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1  Y40.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:50.130 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:50.134 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:51.123 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 50.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:51.125 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1  Y50.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:51.125 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:51.125 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1  Y50.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:51.126 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:51.139 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:51.902 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 60.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:51.904 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1  Y60.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:51.905 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:51.905 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1  Y60.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:51.907 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:51.910 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:52.488 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 70.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:52.489 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1  Y70.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:52.491 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:52.491 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1  Y70.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:52.492 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:52.496 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:52.917 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 80.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:52.919 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1  Y80.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:52.919 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:52.920 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1  Y80.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:52.920 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:52.931 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:53.237 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 90.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:53.239 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1  Y90.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:53.240 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:53.240 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1  Y90.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:53.241 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:53.246 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:53.432 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 100.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:53.435 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1  Y100.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:53.435 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:53.435 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1  Y100.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:53.436 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:53.441 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:54.423 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 110.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:54.425 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1  Y110.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:54.425 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:54.425 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1  Y110.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:54.426 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:54.435 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:56.177 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:56.179 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1  Y120.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:56.180 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:56.180 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1  Y120.0100 {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:57:56.181 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:56.186 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:57.844 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 10.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:57.847 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z10.0000 F1000.00 ; move to target
+2025-06-26 23:57:57.847 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:57.848 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z10.0000 F1000.00 ; move to target
+2025-06-26 23:57:57.850 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:57.853 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:57:59.179 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:57:59.181 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-26 23:57:59.182 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:57:59.182 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-26 23:57:59.183 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:57:59.200 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:00.228 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, -10.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:00.230 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z-10.0000 F1000.00 ; move to target
+2025-06-26 23:58:00.230 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:00.231 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-10.0000 F1000.00 ; move to target
+2025-06-26 23:58:00.231 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:00.236 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:01.323 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, -20.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:01.325 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z-20.0000 F1000.00 ; move to target
+2025-06-26 23:58:01.325 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:01.326 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-20.0000 F1000.00 ; move to target
+2025-06-26 23:58:01.326 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:01.339 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:04.116 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, -10.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:04.118 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z-10.0000 F1000.00 ; move to target
+2025-06-26 23:58:04.118 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:04.118 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-10.0000 F1000.00 ; move to target
+2025-06-26 23:58:04.119 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:04.128 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:04.975 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:04.977 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-26 23:58:04.977 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:04.977 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-26 23:58:04.979 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:04.983 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:05.980 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 10.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:05.982 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z10.0000 F1000.00 ; move to target
+2025-06-26 23:58:05.983 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:05.983 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z10.0000 F1000.00 ; move to target
+2025-06-26 23:58:05.984 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:05.997 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:07.098 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 20.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:07.100 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z20.0000 F1000.00 ; move to target
+2025-06-26 23:58:07.100 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:07.100 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z20.0000 F1000.00 ; move to target
+2025-06-26 23:58:07.101 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:07.108 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:08.276 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 30.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:08.278 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z30.0000 F1000.00 ; move to target
+2025-06-26 23:58:08.278 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:08.279 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z30.0000 F1000.00 ; move to target
+2025-06-26 23:58:08.279 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:08.284 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:09.265 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 40.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:09.267 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z40.0000 F1000.00 ; move to target
+2025-06-26 23:58:09.268 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:09.268 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z40.0000 F1000.00 ; move to target
+2025-06-26 23:58:09.269 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:09.281 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:10.233 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 50.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:10.235 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z50.0000 F1000.00 ; move to target
+2025-06-26 23:58:10.235 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:10.236 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z50.0000 F1000.00 ; move to target
+2025-06-26 23:58:10.236 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:10.245 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:11.125 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 60.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:11.127 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z60.0000 F1000.00 ; move to target
+2025-06-26 23:58:11.127 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:11.128 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z60.0000 F1000.00 ; move to target
+2025-06-26 23:58:11.128 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:11.141 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:11.905 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 70.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:11.907 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z70.0000 F1000.00 ; move to target
+2025-06-26 23:58:11.907 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:11.909 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z70.0000 F1000.00 ; move to target
+2025-06-26 23:58:11.910 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:11.921 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:12.716 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 80.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:12.718 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z80.0000 F1000.00 ; move to target
+2025-06-26 23:58:12.718 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:12.718 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z80.0000 F1000.00 ; move to target
+2025-06-26 23:58:12.719 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:12.724 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:13.473 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 90.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:13.475 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z90.0000 F1000.00 ; move to target
+2025-06-26 23:58:13.475 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:13.475 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z90.0000 F1000.00 ; move to target
+2025-06-26 23:58:13.476 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:13.482 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:14.200 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 100.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:14.202 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z100.0000 F1000.00 ; move to target
+2025-06-26 23:58:14.202 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:14.202 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z100.0000 F1000.00 ; move to target
+2025-06-26 23:58:14.204 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:14.225 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:14.560 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 110.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:14.562 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z110.0000 F1000.00 ; move to target
+2025-06-26 23:58:14.562 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:14.562 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z110.0000 F1000.00 ; move to target
+2025-06-26 23:58:14.563 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:14.575 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:16.600 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 100.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:16.603 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z100.0000 F1000.00 ; move to target
+2025-06-26 23:58:16.603 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:16.604 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z100.0000 F1000.00 ; move to target
+2025-06-26 23:58:16.604 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:16.618 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:16.953 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 90.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:16.955 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z90.0000 F1000.00 ; move to target
+2025-06-26 23:58:16.955 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:16.955 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z90.0000 F1000.00 ; move to target
+2025-06-26 23:58:16.956 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:16.960 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:17.178 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 80.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:17.180 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z80.0000 F1000.00 ; move to target
+2025-06-26 23:58:17.180 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:17.181 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z80.0000 F1000.00 ; move to target
+2025-06-26 23:58:17.181 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:17.186 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:17.935 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 70.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:17.938 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z70.0000 F1000.00 ; move to target
+2025-06-26 23:58:17.938 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:17.938 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z70.0000 F1000.00 ; move to target
+2025-06-26 23:58:17.939 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:17.949 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:32.432 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2025-06-26 23:58:32.433 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2025-06-26 23:58:32.434 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2025-06-26 23:58:32.434 AbstractHeadMountable DEBUG: N2.moveTo((-6.570000, 120.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:32.435 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: Machine not homed. Motion only allowed if driver GcodeAsyncDriver has option "Allow Unhomed Motion" enabled.
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.moveTo(AbstractMotionPlanner.java:179)
+	at org.openpnp.machine.reference.driver.NullMotionPlanner.moveTo(NullMotionPlanner.java:48)
+	at org.openpnp.machine.reference.ReferenceHead.moveTo(ReferenceHead.java:157)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:243)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveToSafeZ(AbstractHeadMountable.java:272)
+	at org.openpnp.spi.base.AbstractHead.moveToSafeZ(AbstractHead.java:321)
+	at org.openpnp.machine.reference.ReferenceHead.moveToSafeZ(ReferenceHead.java:148)
+	at org.openpnp.spi.base.AbstractHead.moveToSafeZ(AbstractHead.java:392)
+	at org.openpnp.gui.JogControlsPanel$12.lambda$actionPerformed$0(JogControlsPanel.java:561)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-26 23:58:32.435 AbstractMachine ERROR: Secondary exception when executing pending motion planner commands: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+	at org.openpnp.machine.reference.driver.GcodeDriver.getReportedLocation(GcodeDriver.java:760)
+	at org.openpnp.machine.reference.driver.GcodeAsyncDriver.waitForCompletion(GcodeAsyncDriver.java:383)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForDriverCompletion(AbstractMotionPlanner.java:852)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForCompletion(AbstractMotionPlanner.java:763)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:593)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-26 23:58:32.436 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:32.437 MessageBoxes DEBUG: Error: java.lang.Exception: Machine not homed. Motion only allowed if driver GcodeAsyncDriver has option "Allow Unhomed Motion" enabled.
+2025-06-26 23:58:37.832 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2025-06-26 23:58:37.832 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2025-06-26 23:58:37.833 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2025-06-26 23:58:37.834 AbstractHeadMountable DEBUG: N2.moveTo((-6.570000, 120.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:37.835 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: Machine not homed. Motion only allowed if driver GcodeAsyncDriver has option "Allow Unhomed Motion" enabled.
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.moveTo(AbstractMotionPlanner.java:179)
+	at org.openpnp.machine.reference.driver.NullMotionPlanner.moveTo(NullMotionPlanner.java:48)
+	at org.openpnp.machine.reference.ReferenceHead.moveTo(ReferenceHead.java:157)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:243)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveToSafeZ(AbstractHeadMountable.java:272)
+	at org.openpnp.spi.base.AbstractHead.moveToSafeZ(AbstractHead.java:321)
+	at org.openpnp.machine.reference.ReferenceHead.moveToSafeZ(ReferenceHead.java:148)
+	at org.openpnp.spi.base.AbstractHead.moveToSafeZ(AbstractHead.java:392)
+	at org.openpnp.gui.JogControlsPanel$12.lambda$actionPerformed$0(JogControlsPanel.java:561)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-26 23:58:37.835 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:37.835 MessageBoxes DEBUG: Error: java.lang.Exception: Machine not homed. Motion only allowed if driver GcodeAsyncDriver has option "Allow Unhomed Motion" enabled.
+2025-06-26 23:58:39.776 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+	at org.openpnp.machine.reference.driver.GcodeDriver.getReportedLocation(GcodeDriver.java:760)
+	at org.openpnp.machine.reference.driver.wizards.AbstractReferenceDriverConfigurationWizard.lambda$saveToModel$0(AbstractReferenceDriverConfigurationWizard.java:404)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-26 23:58:39.777 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:39.783 MessageBoxes DEBUG: Error: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+2025-06-26 23:58:44.125 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2025-06-26 23:58:44.125 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2025-06-26 23:58:44.126 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2025-06-26 23:58:44.126 AbstractHeadMountable DEBUG: N2.moveTo((-6.570000, 120.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:44.128 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-26 23:58:44.128 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:44.128 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+	at org.openpnp.machine.reference.driver.GcodeDriver.getReportedLocation(GcodeDriver.java:760)
+	at org.openpnp.machine.reference.driver.GcodeAsyncDriver.waitForCompletion(GcodeAsyncDriver.java:383)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForDriverCompletion(AbstractMotionPlanner.java:846)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForCompletion(AbstractMotionPlanner.java:763)
+	at org.openpnp.machine.reference.driver.NullMotionPlanner.moveTo(NullMotionPlanner.java:50)
+	at org.openpnp.machine.reference.ReferenceHead.moveTo(ReferenceHead.java:157)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:243)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveToSafeZ(AbstractHeadMountable.java:272)
+	at org.openpnp.spi.base.AbstractHead.moveToSafeZ(AbstractHead.java:321)
+	at org.openpnp.machine.reference.ReferenceHead.moveToSafeZ(ReferenceHead.java:148)
+	at org.openpnp.spi.base.AbstractHead.moveToSafeZ(AbstractHead.java:392)
+	at org.openpnp.gui.JogControlsPanel$12.lambda$actionPerformed$0(JogControlsPanel.java:561)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-26 23:58:44.129 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-26 23:58:44.129 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:44.129 MessageBoxes DEBUG: Error: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+2025-06-26 23:58:44.139 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:46.991 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+	at org.openpnp.machine.reference.driver.GcodeDriver.getReportedLocation(GcodeDriver.java:760)
+	at org.openpnp.machine.reference.driver.wizards.AbstractReferenceDriverConfigurationWizard.lambda$saveToModel$0(AbstractReferenceDriverConfigurationWizard.java:404)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-26 23:58:46.992 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:46.999 MessageBoxes DEBUG: Error: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+2025-06-26 23:58:49.344 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2025-06-26 23:58:49.345 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2025-06-26 23:58:49.345 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2025-06-26 23:58:49.346 AbstractHeadMountable DEBUG: Top.moveToSafeZ(1.0)
+2025-06-26 23:58:49.346 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:49.350 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:50.544 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2025-06-26 23:58:50.544 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2025-06-26 23:58:50.545 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2025-06-26 23:58:50.545 AbstractHeadMountable DEBUG: Top.moveToSafeZ(1.0)
+2025-06-26 23:58:50.546 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:50.549 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:51.429 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2025-06-26 23:58:51.430 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2025-06-26 23:58:51.430 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2025-06-26 23:58:51.431 AbstractHeadMountable DEBUG: Top.moveToSafeZ(1.0)
+2025-06-26 23:58:51.431 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:51.433 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:51.928 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 10.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:51.930 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z10.0000 F1000.00 ; move to target
+2025-06-26 23:58:51.930 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:51.930 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z10.0000 F1000.00 ; move to target
+2025-06-26 23:58:51.931 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:51.943 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:52.729 AbstractHeadMountable DEBUG: N1.moveTo((3.430000, 120.010000, 10.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:52.731 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X3.4300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:58:52.731 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:52.731 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X3.4300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:58:52.732 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:52.736 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:54.341 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 10.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:54.342 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X-6.5700  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:58:54.343 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:58:54.343 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X-6.5700  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:58:54.343 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:54.354 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:58:55.675 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2025-06-26 23:58:55.675 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2025-06-26 23:58:55.676 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2025-06-26 23:58:55.676 AbstractHeadMountable DEBUG: N2.moveTo((-6.570000, 120.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:58:55.677 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: Machine not homed. Motion only allowed if driver GcodeAsyncDriver has option "Allow Unhomed Motion" enabled.
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.moveTo(AbstractMotionPlanner.java:179)
+	at org.openpnp.machine.reference.driver.NullMotionPlanner.moveTo(NullMotionPlanner.java:48)
+	at org.openpnp.machine.reference.ReferenceHead.moveTo(ReferenceHead.java:157)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:243)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveToSafeZ(AbstractHeadMountable.java:272)
+	at org.openpnp.spi.base.AbstractHead.moveToSafeZ(AbstractHead.java:321)
+	at org.openpnp.machine.reference.ReferenceHead.moveToSafeZ(ReferenceHead.java:148)
+	at org.openpnp.spi.base.AbstractHead.moveToSafeZ(AbstractHead.java:392)
+	at org.openpnp.gui.JogControlsPanel$12.lambda$actionPerformed$0(JogControlsPanel.java:561)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-26 23:58:55.677 AbstractMachine ERROR: Secondary exception when executing pending motion planner commands: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+	at org.openpnp.machine.reference.driver.GcodeDriver.getReportedLocation(GcodeDriver.java:760)
+	at org.openpnp.machine.reference.driver.GcodeAsyncDriver.waitForCompletion(GcodeAsyncDriver.java:383)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForDriverCompletion(AbstractMotionPlanner.java:852)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForCompletion(AbstractMotionPlanner.java:763)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:593)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-26 23:58:55.677 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:55.677 MessageBoxes DEBUG: Error: java.lang.Exception: Machine not homed. Motion only allowed if driver GcodeAsyncDriver has option "Allow Unhomed Motion" enabled.
+2025-06-26 23:58:58.722 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+	at org.openpnp.machine.reference.driver.GcodeDriver.getReportedLocation(GcodeDriver.java:760)
+	at org.openpnp.machine.reference.driver.wizards.AbstractReferenceDriverConfigurationWizard.lambda$saveToModel$0(AbstractReferenceDriverConfigurationWizard.java:404)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-26 23:58:58.722 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:58:58.729 MessageBoxes DEBUG: Error: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+2025-06-26 23:59:02.575 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2025-06-26 23:59:02.576 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2025-06-26 23:59:02.576 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2025-06-26 23:59:02.577 AbstractHeadMountable DEBUG: N2.moveTo((-6.570000, 120.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:59:02.578 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-26 23:59:02.578 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:59:02.578 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+	at org.openpnp.machine.reference.driver.GcodeDriver.getReportedLocation(GcodeDriver.java:760)
+	at org.openpnp.machine.reference.driver.GcodeAsyncDriver.waitForCompletion(GcodeAsyncDriver.java:383)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForDriverCompletion(AbstractMotionPlanner.java:846)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForCompletion(AbstractMotionPlanner.java:763)
+	at org.openpnp.machine.reference.driver.NullMotionPlanner.moveTo(NullMotionPlanner.java:50)
+	at org.openpnp.machine.reference.ReferenceHead.moveTo(ReferenceHead.java:157)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:243)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveToSafeZ(AbstractHeadMountable.java:272)
+	at org.openpnp.spi.base.AbstractHead.moveToSafeZ(AbstractHead.java:321)
+	at org.openpnp.machine.reference.ReferenceHead.moveToSafeZ(ReferenceHead.java:148)
+	at org.openpnp.spi.base.AbstractHead.moveToSafeZ(AbstractHead.java:392)
+	at org.openpnp.gui.JogControlsPanel$12.lambda$actionPerformed$0(JogControlsPanel.java:561)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-26 23:59:02.579 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-26 23:59:02.579 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:59:02.585 MessageBoxes DEBUG: Error: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+2025-06-26 23:59:02.587 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:59:06.206 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, -10.000000, 0.000000 mm), 1.0)
+2025-06-26 23:59:06.208 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z-10.0000 F1000.00 ; move to target
+2025-06-26 23:59:06.208 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:59:06.209 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-10.0000 F1000.00 ; move to target
+2025-06-26 23:59:06.209 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:59:06.215 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:59:06.791 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, -20.000000, 0.000000 mm), 1.0)
+2025-06-26 23:59:06.793 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z-20.0000 F1000.00 ; move to target
+2025-06-26 23:59:06.793 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:59:06.793 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-20.0000 F1000.00 ; move to target
+2025-06-26 23:59:06.795 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:59:06.799 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:59:07.361 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, -30.000000, 0.000000 mm), 1.0)
+2025-06-26 23:59:07.363 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z-30.0000 F1000.00 ; move to target
+2025-06-26 23:59:07.363 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:59:07.364 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-30.0000 F1000.00 ; move to target
+2025-06-26 23:59:07.364 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:59:07.374 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:59:08.291 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, -20.000000, 0.000000 mm), 1.0)
+2025-06-26 23:59:08.292 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z-20.0000 F1000.00 ; move to target
+2025-06-26 23:59:08.293 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:59:08.293 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-20.0000 F1000.00 ; move to target
+2025-06-26 23:59:08.295 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:59:08.298 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:59:08.915 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, -10.000000, 0.000000 mm), 1.0)
+2025-06-26 23:59:08.917 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z-10.0000 F1000.00 ; move to target
+2025-06-26 23:59:08.917 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:59:08.917 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z-10.0000 F1000.00 ; move to target
+2025-06-26 23:59:08.918 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:59:08.922 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:59:09.326 AbstractHeadMountable DEBUG: N1.moveTo((-6.570000, 120.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:59:09.328 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-26 23:59:09.328 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:59:09.328 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-26 23:59:09.329 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:59:09.340 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:59:10.309 AbstractHeadMountable DEBUG: N1.moveTo((3.430000, 120.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:59:10.311 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1 X3.4300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:59:10.311 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:59:10.311 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1 X3.4300  {A:A%.4f} {B:B%.4f}  F1000.00 ; move to target
+2025-06-26 23:59:10.312 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:59:10.316 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:59:11.488 AbstractHeadMountable DEBUG: N1.moveTo((3.430000, 120.010000, 10.000000, 0.000000 mm), 1.0)
+2025-06-26 23:59:11.490 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z10.0000 F1000.00 ; move to target
+2025-06-26 23:59:11.491 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:59:11.491 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z10.0000 F1000.00 ; move to target
+2025-06-26 23:59:11.492 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:59:11.502 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:59:11.824 AbstractHeadMountable DEBUG: N1.moveTo((3.430000, 120.010000, 20.000000, 0.000000 mm), 1.0)
+2025-06-26 23:59:11.825 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z20.0000 F1000.00 ; move to target
+2025-06-26 23:59:11.826 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:59:11.826 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z20.0000 F1000.00 ; move to target
+2025-06-26 23:59:11.827 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:59:11.838 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:59:12.911 AbstractHeadMountable DEBUG: N1.moveTo((3.430000, 120.010000, 30.000000, 0.000000 mm), 1.0)
+2025-06-26 23:59:12.913 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z30.0000 F1000.00 ; move to target
+2025-06-26 23:59:12.913 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:59:12.913 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z30.0000 F1000.00 ; move to target
+2025-06-26 23:59:12.914 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:59:12.918 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:59:14.425 ReferenceHead DEBUG: H1.moveToSafeZ(1.0)
+2025-06-26 23:59:14.426 AbstractHeadMountable DEBUG: N1.moveToSafeZ(1.0)
+2025-06-26 23:59:14.426 AbstractHeadMountable DEBUG: N2.moveToSafeZ(1.0)
+2025-06-26 23:59:14.427 AbstractHeadMountable DEBUG: N2.moveTo((3.430000, 120.010000, 0.000000, 0.000000 mm), 1.0)
+2025-06-26 23:59:14.428 GcodeAsyncDriver DEBUG: [GcodeAsyncDriver:192.168.0.127:23] commandQueue offer >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-26 23:59:14.428 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:59:14.428 AbstractMachine TRACE: Exception caught, executing pending motion: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+	at org.openpnp.machine.reference.driver.GcodeDriver.getReportedLocation(GcodeDriver.java:760)
+	at org.openpnp.machine.reference.driver.GcodeAsyncDriver.waitForCompletion(GcodeAsyncDriver.java:383)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForDriverCompletion(AbstractMotionPlanner.java:846)
+	at org.openpnp.machine.reference.driver.AbstractMotionPlanner.waitForCompletion(AbstractMotionPlanner.java:763)
+	at org.openpnp.machine.reference.driver.NullMotionPlanner.moveTo(NullMotionPlanner.java:50)
+	at org.openpnp.machine.reference.ReferenceHead.moveTo(ReferenceHead.java:157)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveTo(AbstractHeadMountable.java:243)
+	at org.openpnp.spi.base.AbstractHeadMountable.moveToSafeZ(AbstractHeadMountable.java:272)
+	at org.openpnp.spi.base.AbstractHead.moveToSafeZ(AbstractHead.java:321)
+	at org.openpnp.machine.reference.ReferenceHead.moveToSafeZ(ReferenceHead.java:148)
+	at org.openpnp.spi.base.AbstractHead.moveToSafeZ(AbstractHead.java:392)
+	at org.openpnp.gui.JogControlsPanel$12.lambda$actionPerformed$0(JogControlsPanel.java:561)
+	at org.openpnp.util.UiUtils.lambda$submitUiMachineTask$0(UiUtils.java:67)
+	at org.openpnp.spi.base.AbstractMachine$1.call(AbstractMachine.java:575)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-06-26 23:59:14.428 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] >> G1   {A:A%.4f} {B:B%.4f} Z0.0000 F1000.00 ; move to target
+2025-06-26 23:59:14.429 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:59:14.429 MessageBoxes DEBUG: Error: java.lang.Exception: GcodeAsyncDriver configuration error: missing POSITION_REPORT_REGEX.
+2025-06-26 23:59:14.433 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] << ok
+2025-06-26 23:59:39.745 MainFrame INFO: Shutting down...
+2025-06-26 23:59:39.954 ReferenceMachine DEBUG: setEnabled(false)
+2025-06-26 23:59:39.954 ReferenceMachine INFO: setHomed(false)
+2025-06-26 23:59:39.956 ReferenceActuator DEBUG: LIGHT_TOP.actuate(false)
+2025-06-26 23:59:39.957 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:59:39.960 ReferenceActuator DEBUG: LIGHT_BOTTOM.actuate(false)
+2025-06-26 23:59:39.960 AbstractMachine TRACE: Machine entering idle state.
+2025-06-26 23:59:39.960 GcodeDriver WARNING: GcodeAsyncDriver configuration error: COMMAND_CONFIRM_REGEX missing. Not waiting for confirmation.
+2025-06-26 23:59:39.965 GcodeDriver$ReaderThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] Read error while disconnecting (expected)
+2025-06-26 23:59:40.063 GcodeAsyncDriver$WriterThread TRACE: [GcodeAsyncDriver:192.168.0.127:23] disconnectRequested, bye-bye.
+2025-06-26 23:59:40.080 AbstractBroadcastingCamera TRACE: Camera Bottom thread 113 bye-bye.
+2025-06-26 23:59:40.296 MainFrame INFO: Shutdown complete, exiting.
+2025-06-26 23:59:40.296 AbstractBroadcastingCamera TRACE: Camera Top thread 111 bye-bye.
