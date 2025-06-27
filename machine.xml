@@ -2,7 +2,7 @@
    <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="1.0" auto-tool-select="true" safe-Z-park="true">
       <axes>
          <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS184cb1f5c9760478" name="X" type="X" driver-id="DRV184cd28a7991ac54" letter="X" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
-            <home-coordinate value="0.0" units="Millimeters"/>
+            <home-coordinate value="345.0" units="Millimeters"/>
             <acceptable-tolerance value="0.025" units="Millimeters"/>
             <backlash-offset value="0.0" units="Millimeters"/>
             <sneak-up-offset value="0.0" units="Millimeters"/>
@@ -36,7 +36,7 @@
             <home-coordinate value="0.0" units="Millimeters"/>
          </axis>
          <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS184cb1f5c993ccb0" name="Z1" type="Z" driver-id="DRV184cd28a7991ac54" letter="Z" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="true" safe-zone-high-enabled="true" version="2.0">
-            <home-coordinate value="0.0" units="Millimeters"/>
+            <home-coordinate value="85.0" units="Millimeters"/>
             <acceptable-tolerance value="0.025" units="Millimeters"/>
             <backlash-offset value="0.0" units="Millimeters"/>
             <sneak-up-offset value="0.0" units="Millimeters"/>
@@ -55,7 +55,7 @@
             <map-input-1 value="1.0" units="Millimeters"/>
             <map-output-1 value="-1.0" units="Millimeters"/>
          </axis>
-         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS184cb1f5c9946da0" name="C1" type="Rotation" driver-id="DRV184cd28a7991ac54" letter="E0" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="true" wrap-around-rotation="false" invert-linear-rotational="true" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS184cb1f5c9946da0" name="U" type="Rotation" driver-id="DRV184cd28a7991ac54" letter="U" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="true" wrap-around-rotation="false" invert-linear-rotational="true" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
             <home-coordinate value="0.0" units="Millimeters"/>
             <acceptable-tolerance value="0.025" units="Millimeters"/>
             <backlash-offset value="0.0" units="Millimeters"/>
@@ -69,7 +69,7 @@
             <jerk-per-second-3 value="0.0" units="Millimeters"/>
             <resolution>1.0E-4</resolution>
          </axis>
-         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS184cb1fd14cb9d14" name="C2" type="Rotation" driver-id="DRV184cd28a7991ac54" letter="E1" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="true" wrap-around-rotation="false" invert-linear-rotational="true" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS184cb1fd14cb9d14" name="V" type="Rotation" driver-id="DRV184cd28a7991ac54" letter="V" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="true" wrap-around-rotation="false" invert-linear-rotational="true" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
             <home-coordinate value="0.0" units="Millimeters"/>
             <acceptable-tolerance value="0.025" units="Millimeters"/>
             <backlash-offset value="0.0" units="Millimeters"/>
@@ -420,16 +420,20 @@
             <reported-axes><![CDATA[X:-1.000 Y:-10.000 Z:40.000 E:0.000 E0:0.0 E1:0.0 Count -1280 -12800 3200 Machine -1.000 -10.000 40.000 Bed comp 0.000]]></reported-axes>
             <configured-axes><![CDATA[Driver assignments: X0 Y1 Z2 E3:4, 3 axes visible]]></configured-axes>
             <command type="POSITION_REPORT_REGEX">
-               <text><![CDATA[^.*X:(?<X>-?\d+\.\d+)\s+Y:(?<Y>-?\d+\.\d+)\s+Z:(?<Z>-?\d+\.\d+).*?E0:(?<E0>-?\d+\.\d+)\s+E1:(?<E1>-?\d+\.\d+).*]]></text>
+               <text><![CDATA[^.*X:(?<X>-?\d+\.\d+)\s+Y:(?<Y>-?\d+\.\d+)\s+Z:(?<Z>-?\d+\.\d+).*?U:(?<U>-?\d+\.\d+)\s+V:(?<V>-?\d+\.\d+).*]]></text>
             </command>
             <command type="MOVE_TO_COMMAND">
-               <text><![CDATA[{Acceleration:M204 S%.2f} G1 {X:X%.4f} {Y:Y%.4f} {A:A%.4f} {B:B%.4f} {Z:Z%.4f} {FeedRate:F%.2f} ; move to target]]></text>
+               <text><![CDATA[{Acceleration:M204 S%.2f} G1 {X:X%.4f} {Y:Y%.4f} {A:A%.4f} {B:B%.4f} {Z:Z%.4f} {V:V%.4f} {U:U%.4f} {FeedRate:F%.2f} ; move to target]]></text>
             </command>
             <command type="COMMAND_CONFIRM_REGEX">
                <text><![CDATA[^ok.*]]></text>
             </command>
             <command type="GET_POSITION_COMMAND">
                <text><![CDATA[M114]]></text>
+            </command>
+            <command type="HOME_COMMAND">
+               <text><![CDATA[G28 Z]]></text>
+               <text><![CDATA[G28 X]]></text>
             </command>
             <send-on-change-feed-rate send-on-change="false" relative-deviation="0.001" variable="FeedRate"/>
             <send-on-change-acceleration send-on-change="false" relative-deviation="0.001" variable="Acceleration"/>
