@@ -1,16 +1,16 @@
 <openpnp-machine>
    <machine class="org.openpnp.machine.reference.ReferenceMachine" speed="1.0" auto-tool-select="true" safe-Z-park="true">
       <axes>
-         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS184cb1f5c9760478" name="X" type="X" driver-id="DRV184cd28a7991ac54" letter="X" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS184cb1f5c9760478" name="X" type="X" driver-id="DRV184cd28a7991ac54" letter="X" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
             <home-coordinate value="345.0" units="Millimeters"/>
             <acceptable-tolerance value="0.025" units="Millimeters"/>
             <backlash-offset value="0.0" units="Millimeters"/>
             <sneak-up-offset value="0.0" units="Millimeters"/>
             <soft-limit-low value="0.0" units="Millimeters"/>
-            <soft-limit-high value="0.0" units="Millimeters"/>
+            <soft-limit-high value="345.0" units="Millimeters"/>
             <safe-zone-low value="0.0" units="Millimeters"/>
             <safe-zone-high value="0.0" units="Millimeters"/>
-            <feedrate-per-second value="333.3333333333333" units="Millimeters"/>
+            <feedrate-per-second value="333.333" units="Millimeters"/>
             <acceleration-per-second-2 value="666.6666666666666" units="Millimeters"/>
             <jerk-per-second-3 value="0.0" units="Millimeters"/>
             <resolution>1.0E-4</resolution>
@@ -35,15 +35,15 @@
          <axis class="org.openpnp.machine.reference.axis.ReferenceVirtualAxis" id="AXS184cb1f5c9922ea0" name="rotationTop" type="Rotation">
             <home-coordinate value="0.0" units="Millimeters"/>
          </axis>
-         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS184cb1f5c993ccb0" name="Z1" type="Z" driver-id="DRV184cd28a7991ac54" letter="Z" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="true" safe-zone-high-enabled="true" version="2.0">
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS184cb1f5c993ccb0" name="Z1" type="Z" driver-id="DRV184cd28a7991ac54" letter="Z" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="true" safe-zone-high-enabled="true" version="2.0">
             <home-coordinate value="85.0" units="Millimeters"/>
             <acceptable-tolerance value="0.025" units="Millimeters"/>
             <backlash-offset value="0.0" units="Millimeters"/>
             <sneak-up-offset value="0.0" units="Millimeters"/>
             <soft-limit-low value="0.0" units="Millimeters"/>
-            <soft-limit-high value="0.0" units="Millimeters"/>
-            <safe-zone-low value="0.0" units="Millimeters"/>
-            <safe-zone-high value="0.0" units="Millimeters"/>
+            <soft-limit-high value="85.0" units="Millimeters"/>
+            <safe-zone-low value="45.0" units="Millimeters"/>
+            <safe-zone-high value="45.0" units="Millimeters"/>
             <feedrate-per-second value="333.3333333333333" units="Millimeters"/>
             <acceleration-per-second-2 value="666.6666666666666" units="Millimeters"/>
             <jerk-per-second-3 value="0.0" units="Millimeters"/>
@@ -411,7 +411,7 @@
          </part-alignment>
       </part-alignments>
       <drivers>
-         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV184cd28a7991ac54" name="GcodeDriver" motion-control-type="ToolpathFeedRate" communications="tcp" connection-keep-alive="true" sync-initial-location="true" allow-unhomed-motion="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="20000" connect-wait-time-milliseconds="3000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="true" compress-gcode="true" compression-excludes="[]&quot;" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
+         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV184cd28a7991ac54" name="GcodeDriver" motion-control-type="ToolpathFeedRate" communications="tcp" connection-keep-alive="true" sync-initial-location="true" allow-unhomed-motion="false" units="Millimeters" max-feed-rate="6000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="20000" connect-wait-time-milliseconds="3000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="true" compress-gcode="true" compression-excludes="[]&quot;" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
             <serial line-ending-type="LF" port-name="" baud="115200" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
             <tcp line-ending-type="LF" ip-address="192.168.0.127" port="23" name="TcpCommunications"/>
             <simulated line-ending-type="LF"/>
