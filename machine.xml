@@ -85,7 +85,7 @@
          </axis>
       </axes>
       <heads>
-         <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1" vacuum-pump-control="PartOn" pump-on-wait-milliseconds="0" visual-homing-method="None" nozzle-solution="DualNegated" nozzle-solutions-multiplier="1">
+         <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1" vacuum-pump-control="PartOn" pump-on-wait-milliseconds="500" visual-homing-method="None" nozzle-solution="DualNegated" nozzle-solutions-multiplier="1">
             <nozzles>
                <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS184cb1f5c9760478" axis-Y-id="AXS184cb1f5c98dc4f0" axis-Z-id="AXS184cb1f5c993ccb0" axis-rotation-id="AXS184cb1f5c9946da0" id="N1" name="N1" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="false" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="NT1" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
@@ -93,7 +93,6 @@
                   </compatible-nozzle-tip-ids>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-                  <vacuum-sense-actuator-name>AVACS1</vacuum-sense-actuator-name>
                   <vacuum-actuator-name>AVAC1</vacuum-actuator-name>
                </nozzle>
                <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS184cb1f5c9760478" axis-Y-id="AXS184cb1f5c98dc4f0" axis-Z-id="AXS184cb1fd14bb2a88" axis-rotation-id="AXS184cb1fd14cb9d14" id="NOZ184cb1fd149e0660" name="N2" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="false" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="true">
@@ -355,6 +354,69 @@
                </stages>
             </pipeline>
          </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.BlindsFeeder" version="1.1" id="FDR184d3afa9e61a600" name="BlindsFeeder" enabled="false" part-id="R0805-1K" retry-count="3" feed-retry-count="3" pick-retry-count="0" normalize="true" vision-enabled="true" feed-count="0" feeder-no="0" feeders-total="0" feeder-group-name="Default" pocket-count="0" first-pocket="1" last-pocket="0" push-speed="0.1" ocr-action="None" ocr-font-name="Liberation Mono" ocr-font-size-pt="7.0" ocr-text-orientation="AwayFromTape" fid-loc-max-passes="3" fid-loc-tolerance-mm="0.5" pocket-pos-tolerance-mm="0.1" max-label-size-mm="10.0" tape-center-offset-mm="-1.0625" cover-type="BlindsCover" cover-actuation="OpenOnJobStart">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <fiducial-1-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <fiducial-2-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <fiducial-3-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <tape-length value="0.0" units="Millimeters"/>
+            <feeder-extent value="0.0" units="Millimeters"/>
+            <pocket-centerline value="0.0" units="Millimeters"/>
+            <pocket-pitch value="0.0" units="Millimeters"/>
+            <pocket-size value="0.0" units="Millimeters"/>
+            <pipeline>
+               <stages>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRead" name="00" enabled="false" file="test.png" color-space="Bgr" handle-as-captured="false"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="true" settle-option="Settle" count="1"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="1" enabled="true" kernel-size="3" property-name="BlurGaussian"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.AffineWarp" name="ocr1" enabled="true" length-unit="Millimeters" x-0="0.0" y-0="0.0" x-1="0.0" y-1="0.0" x-2="0.0" y-2="0.0" scale="1.0" rectify="true" region-of-interest-property="regionOfInterest"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="ocr2" enabled="false" conversion="Bgr2Gray"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.SimpleOcr" name="OCR" enabled="true" alphabet="0123456789.-+_RCLDQYXJIVAFH%GMKkmuµnp" font-name="Liberation Mono" font-size-pt="7.0" font-max-pixel-size="28" auto-detect-size="false" threshold="0.75" draw-style="OverScaledImage" debug="false" property-name="SimpleOcr"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="11" enabled="true" image-stage-name="1"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="2" enabled="true" conversion="Bgr2HsvFull"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.Normalize" name="3" enabled="false"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.MaskHsv" name="4" enabled="true" auto="false" fraction-to-mask="0.0" hue-min="65" hue-max="115" saturation-min="50" saturation-max="255" value-min="40" value-max="255" soft-edge="0" soft-factor="1.0" invert="false" binary-mask="true" property-name="MaskHsv"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="5" enabled="true" kernel-size="13"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.FindContours" name="7" enabled="true" retrieval-mode="List" approximation-method="Simple"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.FilterContours" name="8" enabled="true" contours-stage-name="7" min-area="1000.0" max-area="100000.0" property-name="FilterContours"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.MinAreaRectContours" name="results" enabled="true" contours-stage-name="8"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="10" enabled="true" image-stage-name="0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawRotatedRects" name="12" enabled="false" rotated-rects-stage-name="results" thickness="3" draw-rect-center="true" rect-center-radius="20" show-orientation="false"/>
+               </stages>
+            </pipeline>
+            <sprocket-pitch value="4.0" units="Millimeters"/>
+            <edge-open-distance value="2.0" units="Millimeters"/>
+            <edge-closed-distance value="2.0" units="Millimeters"/>
+            <push-Z-offset value="0.25" units="Millimeters"/>
+            <ocr-margin value="20.0" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.pandaplacer.BambooFeederAutoVision" version="1.1" id="FDR184d4fc9aa164d00" name="BambooFeederAutoVision" enabled="false" part-id="FIDUCIAL-1X2-FIDUCIAL1X2" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="false" feed-count="0" pipeline-type="CircularSymmetry" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="UntilConfident" feed-actuator-value="0.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <hole-1-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <hole-2-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <part-pitch value="4.0" units="Millimeters"/>
+            <feed-pitch value="4.0" units="Millimeters"/>
+            <pipeline>
+               <stages>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="true" settle-option="Settle" count="1"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb0" enabled="false" prefix="push_pull_" suffix=".png"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="1" enabled="true" kernel-size="5" property-name="BlurGaussian"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.AffineWarp" name="2" enabled="true" length-unit="Millimeters" x-0="0.0" y-0="0.0" x-1="0.0" y-1="0.0" x-2="0.0" y-2="0.0" scale="1.0" rectify="true" region-of-interest-property="regionOfInterest"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="3" enabled="true" conversion="Bgr2Gray"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.SimpleOcr" name="OCR" enabled="true" alphabet="0123456789.-+_RCLDQYXJIVAFH%GMKkmuµnp" font-name="Liberation Mono" font-size-pt="7.0" font-max-pixel-size="20" auto-detect-size="false" threshold="0.75" draw-style="OverOriginalImage" debug="false" property-name="SimpleOcr"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="5" enabled="true" image-stage-name="0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCircularSymmetry" name="results" enabled="true" min-diameter="10" max-diameter="100" max-distance="100" search-width="0" search-height="0" max-target-count="10" min-symmetry="1.2" corr-symmetry="0.2" outer-margin="0.3" inner-margin="0.1" sub-sampling="8" super-sampling="1" symmetry-score="RingMedianVarianceVsRingVarianceSum" property-name="sprocketHole" diagnostics="false" heat-map="false"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="7" enabled="false" image-stage-name="0"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="8" enabled="false" circles-stage-name="results" thickness="1">
+                     <color r="255" g="0" b="0" a="255"/>
+                  </cv-stage>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="push_pull_result_" suffix=".png"/>
+               </stages>
+            </pipeline>
+            <precision-wanted value="0.1" units="Millimeters"/>
+            <sum-of-errors value="0.0" units="Millimeters"/>
+            <sum-of-error-squares value="0.0" units="Millimeters"/>
+         </feeder>
       </feeders>
       <cameras>
          <camera class="org.openpnp.machine.reference.camera.SimulatedUpCamera" id="C2" name="Bottom" looking="Up" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="true" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="FixedTime" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="AL2" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" width="640" height="480" simulate-focal-blur="false" simulated-flipped="false" background-scenario="Dark">
@@ -433,6 +495,9 @@
             </command>
             <command type="HOME_COMMAND">
                <text><![CDATA[G28]]></text>
+            </command>
+            <command head-mountable-id="AP1" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[{True:M42 P0 S255} {False:M42 P0 S0}]]></text>
             </command>
             <send-on-change-feed-rate send-on-change="false" relative-deviation="0.001" variable="FeedRate"/>
             <send-on-change-acceleration send-on-change="false" relative-deviation="0.001" variable="Acceleration"/>
