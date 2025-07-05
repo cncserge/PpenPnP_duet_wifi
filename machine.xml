@@ -91,15 +91,16 @@
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
                      <string>NT1</string>
                   </compatible-nozzle-tip-ids>
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="-20.0" y="-76.95" z="0.0" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <vacuum-actuator-name>AVAC1</vacuum-actuator-name>
                </nozzle>
                <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS184cb1f5c9760478" axis-Y-id="AXS184cb1f5c98dc4f0" axis-Z-id="AXS184cb1fd14bb2a88" axis-rotation-id="AXS184cb1fd14cb9d14" id="NOZ184cb1fd149e0660" name="N2" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="false" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="true">
-                  <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <compatible-nozzle-tip-ids class="java.util.ArrayList">
+                     <string>NT1</string>
+                  </compatible-nozzle-tip-ids>
+                  <head-offsets units="Millimeters" x="20.0" y="-76.95" z="0.0" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-                  <vacuum-sense-actuator-name>AVACS2</vacuum-sense-actuator-name>
                   <vacuum-actuator-name>AVAC2</vacuum-actuator-name>
                </nozzle>
             </nozzles>
@@ -110,22 +111,17 @@
                <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="AP1" name="PUMP" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="A1" name="AVACS1" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-               </actuator>
                <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT184cb1fd14ce4078" name="AVAC1" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                </actuator>
                <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT184cb1fd150144a0" name="AVAC2" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT184cb1fd1506c024" name="AVACS2" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-               </actuator>
             </actuators>
             <cameras>
-               <camera class="org.openpnp.machine.reference.camera.ImageCamera" axis-X-id="AXS184cb1f5c9760478" axis-Y-id="AXS184cb1f5c98dc4f0" axis-Z-id="AXS184cb1f5c9908280" axis-rotation-id="AXS184cb1f5c9922ea0" id="C1" name="Top" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="true" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="FixedTime" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="24.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="AL1" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" width="640" height="480" simulated-rotation="0.0" simulated-scale="1.0" simulated-distortion="0.0" simulated-Y-rotation="0.0" simulated-flipped="false" pick-location-tolerance-mm="0.1" pick-location-minimum-score="0.87" place-location-tolerance-mm="0.1" place-location-minimum-score="0.58" filter-test-image-vision="true" sub-pixel-rendering="true">
-                  <units-per-pixel units="Millimeters" x="0.04233" y="0.04233" z="0.0" rotation="0.0"/>
+               <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" axis-X-id="AXS184cb1f5c9760478" axis-Y-id="AXS184cb1f5c98dc4f0" id="CAM184f5fc9b184979c" name="Top" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="FixedTime" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="90.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="AL1" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="HD USB Camera \\?\usb#vid_32e4&amp;pid_9310&amp;mi_00#7&amp;3c4e0f5&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" freeze-properties="false">
+                  <units-per-pixel units="Millimeters" x="0.03776435" y="0.03787879" z="0.0" rotation="0.0"/>
+                  <default-z value="0.0" units="Millimeters"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <roaming-radius value="0.0" units="Millimeters"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -159,13 +155,19 @@
                   <focus-provider class="org.openpnp.machine.reference.camera.AutoFocusProvider" averaged-frames="1" focus-speed="0.5" show-diagnostics="true">
                      <focal-resolution value="0.05" units="Millimeters"/>
                   </focus-provider>
-                  <source-uri>classpath://samples/pnp-test/pnp-test.png</source-uri>
-                  <image-units-per-pixel units="Millimeters" x="0.04233" y="0.04233" z="0.0" rotation="0.0"/>
-                  <image-offset units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-                  <focal-length value="6.0" units="Millimeters"/>
-                  <sensor-diagonal value="4.4" units="Millimeters"/>
-                  <primary-fiducial units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-                  <secondary-fiducial units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+                  <back-light-compensation property="BackLightCompensation" value="1" auto="false"/>
+                  <brightness property="Brightness" value="72" auto="false"/>
+                  <contrast property="Contrast" value="115" auto="false"/>
+                  <exposure property="Exposure" value="-1" auto="true"/>
+                  <focus property="Focus"/>
+                  <gain property="Gain" value="0" auto="false"/>
+                  <gamma property="Gamma" value="72" auto="false"/>
+                  <hue property="Hue" value="-40" auto="false"/>
+                  <power-line-frequency property="PowerLineFrequency" value="1" auto="false"/>
+                  <saturation property="Saturation" value="1" auto="false"/>
+                  <sharpness property="Sharpness" value="3" auto="false"/>
+                  <white-balance property="WhiteBalance" value="4600" auto="true"/>
+                  <zoom property="Zoom"/>
                </camera>
             </cameras>
             <park-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
@@ -419,12 +421,12 @@
          </feeder>
       </feeders>
       <cameras>
-         <camera class="org.openpnp.machine.reference.camera.SimulatedUpCamera" id="C2" name="Bottom" looking="Up" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="true" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="FixedTime" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="false" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="AL2" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" width="640" height="480" simulate-focal-blur="false" simulated-flipped="false" background-scenario="Dark">
-            <units-per-pixel units="Millimeters" x="0.0134375" y="0.0134375" z="0.0" rotation="0.0"/>
+         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM184f6ba3ffa99004" name="Bot" looking="Up" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="false" anti-glare-light-off="false" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="FixedTime" settle-time-ms="250" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="USB Camera \\?\usb#vid_0c45&amp;pid_6369&amp;mi_00#7&amp;41d2f94&amp;0&amp;0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global" format-id="0" freeze-properties="false">
+            <units-per-pixel units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <default-z value="0.0" units="Millimeters"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
             <roaming-radius value="0.0" units="Millimeters"/>
-            <head-offsets units="Millimeters" x="118.799" y="7.117" z="0.0" rotation="0.0"/>
-            <safe-z value="0.0" units="Millimeters"/>
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <calibration enabled="false">
                <camera-matrix length="9">0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0</camera-matrix>
                <distortion-coefficients length="5">0.0, 0.0, 0.0, 0.0, 0.0</distortion-coefficients>
@@ -455,11 +457,19 @@
             <focus-provider class="org.openpnp.machine.reference.camera.AutoFocusProvider" averaged-frames="1" focus-speed="0.5" show-diagnostics="true">
                <focal-resolution value="0.05" units="Millimeters"/>
             </focus-provider>
-            <error-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <simulated-location units="Millimeters" x="118.799" y="7.117" z="0.0" rotation="0.0"/>
-            <simulated-units-per-pixel units="Millimeters" x="0.0134375" y="0.0134375" z="0.0" rotation="0.0"/>
-            <focal-length value="6.0" units="Millimeters"/>
-            <sensor-diagonal value="4.4" units="Millimeters"/>
+            <back-light-compensation property="BackLightCompensation" value="1" auto="false"/>
+            <brightness property="Brightness" value="0" auto="false"/>
+            <contrast property="Contrast" value="32" auto="false"/>
+            <exposure property="Exposure" value="-6" auto="true"/>
+            <focus property="Focus"/>
+            <gain property="Gain" value="0" auto="false"/>
+            <gamma property="Gamma" value="72" auto="false"/>
+            <hue property="Hue" value="0" auto="false"/>
+            <power-line-frequency property="PowerLineFrequency" value="2" auto="false"/>
+            <saturation property="Saturation" value="54" auto="false"/>
+            <sharpness property="Sharpness" value="3" auto="false"/>
+            <white-balance property="WhiteBalance" value="4600" auto="true"/>
+            <zoom property="Zoom"/>
          </camera>
       </cameras>
       <actuators>
@@ -499,6 +509,18 @@
             <command head-mountable-id="AP1" type="ACTUATE_BOOLEAN_COMMAND">
                <text><![CDATA[{True:M42 P0 S255} {False:M42 P0 S0}]]></text>
             </command>
+            <command head-mountable-id="ACT184cb1fd14ce4078" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[{True:M42 P1 S255} {False:M42 P1 S0}]]></text>
+            </command>
+            <command head-mountable-id="ACT184cb1fd150144a0" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[{True:M42 P2 S255} {False:M42 P2 S0}]]></text>
+            </command>
+            <command head-mountable-id="AL1" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[{True:M42 P3 S20} {False:M42 P3 S0}]]></text>
+            </command>
+            <command head-mountable-id="AL2" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[{True:M42 P4 S255} {False:M42 P4 S0}]]></text>
+            </command>
             <send-on-change-feed-rate send-on-change="false" relative-deviation="0.001" variable="FeedRate"/>
             <send-on-change-acceleration send-on-change="false" relative-deviation="0.001" variable="Acceleration"/>
             <send-on-change-jerk send-on-change="false" relative-deviation="0.001" variable="Jerk"/>
@@ -507,6 +529,23 @@
       <discard-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
       <default-board-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
       <properties>
+         <entry>
+            <string>CameraCalibrationProcessProperties</string>
+            <object class="org.openpnp.gui.processes.CalibrateCameraProcess$CameraCalibrationProcessProperties">
+               <max-allowed-pixel-step-factor>0.08333333333333333</max-allowed-pixel-step-factor>
+               <min-allowed-pixel-step-factor>0.027777777777777776</min-allowed-pixel-step-factor>
+               <change-mask-threshold>3</change-mask-threshold>
+               <mask-growth-threshold-factor>0.7</mask-growth-threshold-factor>
+               <mask-shrink-thresholdfactor>0.1</mask-shrink-thresholdfactor>
+               <mask-growth-factor>0.1</mask-growth-factor>
+               <mask-shrinkfactor>0.05</mask-shrinkfactor>
+               <initial-mask-diameter-fraction>0.25</initial-mask-diameter-fraction>
+               <centering-diameter-fraction>0.5</centering-diameter-fraction>
+               <max-error-count>15</max-error-count>
+               <default-detection-diameter>25</default-detection-diameter>
+               <default-up-looking-secondary-offset-Z-mm>2.0</default-up-looking-secondary-offset-Z-mm>
+            </object>
+         </entry>
          <entry>
             <string>Welcome2_0_Dialog_Shown</string>
             <object class="java.lang.Boolean">true</object>
