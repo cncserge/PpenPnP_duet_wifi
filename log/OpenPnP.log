@@ -1,0 +1,25 @@
+2025-07-10 16:30:48.154 Configuration INFO: No packages.xml found in configuration directory, loading defaults.
+2025-07-10 16:30:48.516 Configuration INFO: No parts.xml found in configuration directory, loading defaults.
+2025-07-10 16:30:48.554 Configuration INFO: No boards.xml found in configuration directory, loading defaults.
+2025-07-10 16:30:48.577 Configuration INFO: No panels.xml found in configuration directory, loading defaults.
+2025-07-10 16:30:48.598 Configuration INFO: No vision-settings.xml found in configuration directory, loading defaults.
+2025-07-10 16:30:48.616 Configuration INFO: No machine.xml found in configuration directory, loading defaults.
+2025-07-10 16:30:50.020 Configuration INFO: Defaults were loaded. Saving to configuration directory.
+2025-07-10 16:30:50.885 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-07-10 16:30:50.885 CameraView DEBUG: No reticle preference found.
+2025-07-10 16:30:51.373 CameraView DEBUG: Failed to load camera specific reticle, checking default.
+2025-07-10 16:30:51.373 CameraView DEBUG: No reticle preference found.
+2025-07-10 16:30:51.375 AbstractBroadcastingCamera TRACE: Camera Top thread 71 started.
+2025-07-10 16:30:51.375 AbstractBroadcastingCamera TRACE: Camera Bottom thread 73 started.
+2025-07-10 16:30:52.972 Main INFO: Bienvenue, Bienvenido, Willkommen, Hello, Namaskar, Welkom, Bonjour to OpenPnP version 2025-02-02_20-41-38.e468422.
+2025-07-10 16:30:52.972 Scripting TRACE: Scripting.on Startup
+2025-07-10 16:31:05.184 Solutions$Issue DEBUG: About to set state Solved (from Open) on ReferenceHead H1: Создать сопла для этой головы
+2025-07-10 16:34:34.967 MainFrame INFO: Shutting down...
+2025-07-10 16:34:35.020 ReferenceMachine DEBUG: setEnabled(false)
+2025-07-10 16:34:35.021 ReferenceMachine INFO: setHomed(false)
+2025-07-10 16:34:35.023 AbstractMachine TRACE: Machine not enabled, task ignored.
+2025-07-10 16:34:35.023 AbstractMachine TRACE: Machine not enabled, task ignored.
+2025-07-10 16:34:35.023 NullDriver DEBUG: setEnabled(false)
+2025-07-10 16:34:35.026 AbstractBroadcastingCamera TRACE: Camera Bottom thread 73 bye-bye.
+2025-07-10 16:34:35.028 AbstractBroadcastingCamera TRACE: Camera Top thread 71 bye-bye.
+2025-07-10 16:34:35.028 MainFrame INFO: Shutdown complete, exiting.
