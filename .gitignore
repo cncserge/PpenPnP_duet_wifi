@@ -4,3 +4,4 @@
 /org.openpnp.vision.pipeline.stages.ImageWriteDebug
 /org.openpnp.util.FeederVisionHelper/*.png
 /org.openpnp.machine.reference.feeder.ReferenceDragFeeder.Vision/*.png
+/org.openpnp.machine.reference.ReferenceNozzleTipCalibration/*.png

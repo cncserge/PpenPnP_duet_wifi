@@ -29,7 +29,7 @@
             <jerk-per-second-3 value="0.0" units="Millimeters"/>
             <resolution>1.0E-4</resolution>
          </axis>
-         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS184cb1f5c993ccb0" name="Z1" type="Z" driver-id="DRV184cd28a7991ac54" letter="Z" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="false" soft-limit-high-enabled="false" safe-zone-low-enabled="true" safe-zone-high-enabled="true" version="2.0">
+         <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS184cb1f5c993ccb0" name="Z1" type="Z" driver-id="DRV184cd28a7991ac54" letter="Z" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="false" wrap-around-rotation="false" invert-linear-rotational="false" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="true" safe-zone-high-enabled="true" version="2.0">
             <home-coordinate value="43.5" units="Millimeters"/>
             <acceptable-tolerance value="0.025" units="Millimeters"/>
             <backlash-offset value="0.0" units="Millimeters"/>
@@ -45,9 +45,9 @@
          </axis>
          <axis class="org.openpnp.machine.reference.axis.ReferenceMappedAxis" id="AXS184cb1fd14bb2a88" name="Z2" type="Z" input-axis-id="AXS184cb1f5c993ccb0">
             <map-input-0 value="0.0" units="Millimeters"/>
-            <map-output-0 value="0.0" units="Millimeters"/>
-            <map-input-1 value="1.0" units="Millimeters"/>
-            <map-output-1 value="-1.0" units="Millimeters"/>
+            <map-output-0 value="85.0" units="Millimeters"/>
+            <map-input-1 value="85.0" units="Millimeters"/>
+            <map-output-1 value="0.0" units="Millimeters"/>
          </axis>
          <axis class="org.openpnp.machine.reference.axis.ReferenceControllerAxis" id="AXS184cb1f5c9946da0" name="U" type="Rotation" driver-id="DRV184cd28a7991ac54" letter="U" backlash-compensation-method="None" backlash-speed-factor="0.25" limit-rotation="true" wrap-around-rotation="true" invert-linear-rotational="true" soft-limit-low-enabled="true" soft-limit-high-enabled="true" safe-zone-low-enabled="false" safe-zone-high-enabled="false" version="2.0">
             <home-coordinate value="0.0" units="Millimeters"/>
@@ -184,7 +184,7 @@
       </heads>
       <signalers/>
       <feeders>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferencePushPullFeeder" version="1.1" id="FDR1851023be3452b3c" name="ReferencePushPullFeeder" enabled="true" part-id="R0805-1K" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="90.0" normalize-pick-location="true" snap-to-axis="true" used-as-template="false" calibrate-motion-x="true" calibrate-motion-y="true" feed-multiplier="1" feed-speed-push-2="1.0" feed-speed-push-3="1.0" feed-speed-push-end="0.5" feed-speed-pull-3="0.5" feed-speed-pull-2="1.0" feed-speed-pull-1="1.0" feed-speed-pull-0="0.1" included-push-1="false" included-push-2="false" included-push-3="true" included-push-end="true" included-multi-0="false" included-multi-1="false" included-multi-2="false" included-multi-3="false" included-multi-end="true" included-pull-0="true" included-pull-1="false" included-pull-2="false" included-pull-3="true" additive-rotation="true" actuator-name="PUSH_PULL_V" peel-off-actuator-name="PUMP" feed-count="60" pipeline-type="CircularSymmetry" ocr-font-name="Liberation Mono" ocr-font-size-pt="7.0" ocr-wrong-part-action="None" ocr-discover-on-job-start="false" ocr-stop-after-wrong-part="false" calibration-count="28" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" row-location-tolerance-mm="4.0" row-Z-location-tolerance-mm="1.0" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="OnEachTapeFeed">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferencePushPullFeeder" version="1.1" id="FDR1851023be3452b3c" name="ReferencePushPullFeeder" enabled="true" part-id="R0805-1K" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="90.0" normalize-pick-location="true" snap-to-axis="true" used-as-template="false" calibrate-motion-x="true" calibrate-motion-y="true" feed-multiplier="1" feed-speed-push-2="1.0" feed-speed-push-3="1.0" feed-speed-push-end="0.5" feed-speed-pull-3="0.5" feed-speed-pull-2="1.0" feed-speed-pull-1="1.0" feed-speed-pull-0="0.1" included-push-1="false" included-push-2="false" included-push-3="true" included-push-end="true" included-multi-0="false" included-multi-1="false" included-multi-2="false" included-multi-3="false" included-multi-end="true" included-pull-0="true" included-pull-1="false" included-pull-2="false" included-pull-3="true" additive-rotation="true" actuator-name="PUSH_PULL_V" peel-off-actuator-name="PUMP" feed-count="61" pipeline-type="CircularSymmetry" ocr-font-name="Liberation Mono" ocr-font-size-pt="7.0" ocr-wrong-part-action="None" ocr-discover-on-job-start="false" ocr-stop-after-wrong-part="false" calibration-count="29" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" row-location-tolerance-mm="4.0" row-Z-location-tolerance-mm="1.0" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="OnEachTapeFeed">
             <location units="Millimeters" x="325.33623365000005" y="79.99131687999999" z="-75.0" rotation="180.0"/>
             <hole-1-location units="Millimeters" x="323.33623365000005" y="76.49131687999999" z="0.0" rotation="0.0"/>
             <hole-2-location units="Millimeters" x="319.33623365000005" y="76.49131687999999" z="0.0" rotation="0.0"/>
@@ -214,8 +214,8 @@
                </stages>
             </pipeline>
             <precision-wanted value="0.2" units="Millimeters"/>
-            <sum-of-errors value="3.625199306046129" units="Millimeters"/>
-            <sum-of-error-squares value="1.2561912605486638" units="Millimeters"/>
+            <sum-of-errors value="3.8286733495361216" units="Millimeters"/>
+            <sum-of-error-squares value="1.2975929469228311" units="Millimeters"/>
          </feeder>
       </feeders>
       <cameras>
@@ -573,7 +573,7 @@
             <max-part-diameter value="3.0" units="Millimeters"/>
             <max-part-height value="5.0" units="Millimeters"/>
             <max-pick-tolerance value="1.0" units="Millimeters"/>
-            <calibration angle-subdivisions="6" allow-misdetections="0" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="false" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChangeInJob" background-calibration-method="None" background-min-hue="0" background-max-hue="0" background-tol-hue="8" background-min-saturation="0" background-max-saturation="0" background-tol-saturation="8" background-min-value="0" background-max-value="0" background-tol-value="8" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
+            <calibration angle-subdivisions="6" allow-misdetections="0" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChangeInJob" background-calibration-method="Brightness" background-min-hue="0" background-max-hue="0" background-tol-hue="8" background-min-saturation="0" background-max-saturation="0" background-tol-saturation="8" background-min-value="0" background-max-value="0" background-tol-value="8" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
                <pipeline>
                   <stages>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="false" settle-option="Settle" count="1">
