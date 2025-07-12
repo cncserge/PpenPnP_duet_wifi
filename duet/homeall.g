@@ -10,11 +10,29 @@ G90                       ; absolute positioning
 G92 Z0                    ; set Z position to axis minimum (you may want to adjust this)
 G1 Z 43.5 F6000
 
-G91                       ; relative positioning
-; G1 H2 Z5 F6000            ; lift Z relative to current position
-G1 H1 X1005 Y1005 F6000 ; move quickly to X and Y axis endstops and stop there (first pass)
-G1 H2 X-5 Y-5 F6000         ; go back a few mm
-G1 H1 X1005 Y1005 F360  ; move slowly to X and Y axis endstops once more (second pass)
+
+; --- Хомим Y ---
+G91
+G1 H1 Y1005 F6000
+G1 H2 Y-5 F6000
+G1 H1 Y1005 F360
+
+; --- Хомим X ---
+G1 H1 X1005 F6000
+G1 H2 X-5 F6000
+G1 H1 X1005 F360
+G90
+G1 X295 F6000
+
+
+
+
+
+;G91                       ; relative positioning
+;; G1 H2 Z5 F6000            ; lift Z relative to current position
+;G1 H1 X1005 Y1005 F6000 ; move quickly to X and Y axis endstops and stop there (first pass)
+;G1 H2 X-5 Y-5 F6000         ; go back a few mm
+;G1 H1 X1005 Y1005 F360  ; move slowly to X and Y axis endstops once more (second pass)
 
 G92 U0 V0
 

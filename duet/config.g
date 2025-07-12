@@ -18,20 +18,20 @@ M586 P2 S1                                      ; enable Telnet
 M569 P0 S0                                      ; physical drive 0 goes forwards
 M569 P1 S0                                      ; physical drive 1 goes forwards
 M569 P2 S1                                      ; physical drive 2 goes forwards
-M569 P3 S1                                      ; physical drive 3 goes forwards
-M569 P4 S1                                      ; physical drive 4 goes forwards
+M569 P3 S0                                      ; physical drive 3 goes forwards
+M569 P4 S0                                      ; physical drive 4 goes forwards
 M584 X0 Y1 Z2 V3 U4                            ; set drive mapping
-M350 X256 Y256 Z16 U16 V16 I1                      ; configure microstepping with interpolation
-M92 X1280.00 Y1280.00 Z80.00 U420.00 V420.00        ; set steps per mm
-M566 X900.00 Y900.00 Z900.00 U120.00 V120.00      ; set maximum instantaneous speed changes (mm/min)
-M203 X18000.00 Y18000.00 Z6000.00 U1200.00 V1200.00 ; set maximum speeds (mm/min)
-M201 X1500.00 Y1000.00 Z1000.00 U250.00 V250.00      ; set accelerations (mm/s^2)
-M906 X1500 Y1000 Z800 U800 V800 I30                ; set motor currents (mA) and motor idle factor in per cent
+M350 X256 Y256 Z16 U128 V128 I1                      ; configure microstepping with interpolation
+M92 X1280.00 Y1280.00 Z80.00 U70.00 V70.00        ; set steps per mm
+M566 X900.00 Y900.00 Z900.00 U700.00 V700.00      ; set maximum instantaneous speed changes (mm/min)
+M203 X18000.00 Y18000.00 Z6000.00 U18000.00 V18000.00 ; set maximum speeds (mm/min)
+M201 X1500.00 Y1000.00 Z1000.00 U1000.00 V1000.00      ; set accelerations (mm/s^2)
+M906 X1500 Y1000 Z800 U500 V500 I30                ; set motor currents (mA) and motor idle factor in per cent
 M84 S30                                         ; Set idle timeout
 
 ; Axis Limits
-M208 X0 Y0 Z0 S1                                ; set axis minima
-M208 X345 Y400 Z85 S0                        ; set axis maxima
+M208 X0 Y0 Z0 V-360 U-360 S1                                ; set axis minima
+M208 X345 Y400 Z85 V360 U360 S0                        ; set axis maxima
 
 ; Endstops
 ; WARNING: No endstops configured
