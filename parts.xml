@@ -1,8 +1,9 @@
 <openpnp-parts>
-   <part id="R0805-1K" height-units="Millimeters" height="1.0" package-id="R0805" speed="1.0" pick-retry-count="0"/>
-   <part id="R1206-10K" height-units="Millimeters" height="0.4" package-id="R1206" speed="1.0" pick-retry-count="0"/>
-   <part id="C1206-100nf" height-units="Millimeters" height="0.4" package-id="C1206" speed="1.0" pick-retry-count="0"/>
-   <part id="1N4148W" height-units="Millimeters" height="0.5" package-id="SOD123" speed="1.0" pick-retry-count="0"/>
-   <part id="R1206-240" height-units="Millimeters" height="0.4" package-id="R1206" speed="1.0" pick-retry-count="0"/>
-   <part id="R1206-22k" height-units="Millimeters" height="0.4" package-id="R1206" speed="1.0" pick-retry-count="0"/>
+   <part id="R0805-1K" height-units="Millimeters" height="1.0" package-id="R0805" speed="1.0" pick-retry-count="3"/>
+   <part id="R1206-10K" height-units="Millimeters" height="0.4" package-id="R1206" speed="1.0" pick-retry-count="3"/>
+   <part id="C1206-100nf" height-units="Millimeters" height="0.4" package-id="C1206" speed="1.0" pick-retry-count="3"/>
+   <part id="1N4148W" height-units="Millimeters" height="0.5" package-id="SOD123" speed="1.0" pick-retry-count="3"/>
+   <part id="R1206-240" height-units="Millimeters" height="0.4" package-id="R1206" speed="1.0" pick-retry-count="3"/>
+   <part id="R1206-22k" height-units="Millimeters" height="0.4" package-id="R1206" speed="1.0" pick-retry-count="3"/>
+   <part id="R1206-2k" height-units="Millimeters" height="0.4" package-id="R1206" speed="1.0" pick-retry-count="3"/>
 </openpnp-parts>
