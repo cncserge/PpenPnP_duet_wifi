@@ -110,7 +110,7 @@
       </cv-pipeline>
       <vision-offset units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
    </vision-settings>
-   <vision-settings class="org.openpnp.model.BottomVisionSettings" id="BVS_Default" name="- Default Machine Bottom Vision -" enabled="true" pre-rotate-usage="Default" check-part-size-method="BodySize" check-size-tolerance-percent="20" max-rotation="Adjust" asymmetric="false">
+   <vision-settings class="org.openpnp.model.BottomVisionSettings" id="BVS_Default" name="- Default Machine Bottom Vision -" enabled="true" pre-rotate-usage="Default" check-part-size-method="Disabled" check-size-tolerance-percent="20" max-rotation="Adjust" asymmetric="false">
       <cv-pipeline>
          <stages>
             <cv-stage class="org.openpnp.vision.pipeline.stages.ParameterNumeric" name="pThreshold" enabled="true" parameter-label="Threshold" parameter-description="Set the brightness threshold that isolates the shiny contacts of a part." stage-name="threshold" property-name="threshold" effect-stage-name="threshold" preview-result="true" minimum-value="1.0" maximum-value="254.0" default-value="100.0" numeric-type="Integer"/>
