@@ -1,10 +1,11 @@
 <openpnp-parts>
    <part id="R0805-1K" height-units="Millimeters" height="1.0" package-id="R0805" speed="1.0" pick-retry-count="3"/>
-   <part id="R1206-10K" height-units="Millimeters" height="0.4" package-id="R1206" speed="1.0" pick-retry-count="3"/>
+   <part bottom-vision-id="BVS1853479d4140e14c" id="R1206-10K" height-units="Millimeters" height="0.4" package-id="R1206" speed="1.0" pick-retry-count="3"/>
    <part id="C1206-100nf" height-units="Millimeters" height="0.4" package-id="C1206" speed="1.0" pick-retry-count="3"/>
    <part bottom-vision-id="BVS185340b172dc8bcc" id="1N4148W" height-units="Millimeters" height="0.5" package-id="SOD123" speed="1.0" pick-retry-count="3"/>
    <part id="R1206-240" height-units="Millimeters" height="0.4" package-id="R1206" speed="1.0" pick-retry-count="3"/>
    <part id="R1206-22k" height-units="Millimeters" height="0.4" package-id="R1206" speed="1.0" pick-retry-count="3"/>
    <part id="R1206-2k" height-units="Millimeters" height="0.4" package-id="R1206" speed="1.0" pick-retry-count="3"/>
    <part bottom-vision-id="BVS185340b053f47414" id="MMBT2222A" height-units="Millimeters" height="0.4" package-id="SOT-23" speed="1.0" pick-retry-count="3"/>
+   <part id="PC817" height-units="Millimeters" height="3.5" package-id="SMDIP4" speed="1.0" pick-retry-count="0"/>
 </openpnp-parts>

@@ -449,4 +449,18 @@
          <string>TIP185198db87d9041c</string>
       </compatible-nozzle-tip-ids>
    </package>
+   <package version="1.1" bottom-vision-id="BVS_Default" id="SMDIP4" pick-vacuum-level="0.0" place-blow-off-level="0.0">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0" outer-dimension="0.0" inner-dimension="0.0" pad-count="0" pad-pitch="0.0" pad-across="0.0" pad-roundness="0.0">
+         <pad name="1" x="-4.765" y="1.27" width="2.0" height="1.78" rotation="0.0" roundness="0.0"/>
+         <pad name="3" x="4.765" y="-1.27" width="2.0" height="1.78" rotation="0.0" roundness="0.0"/>
+         <pad name="2" x="-4.765" y="-1.27" width="2.0" height="1.78" rotation="0.0" roundness="0.0"/>
+         <pad name="4" x="4.765" y="1.27" width="2.0" height="1.78" rotation="0.0" roundness="0.0"/>
+      </footprint>
+      <vision-compositing compositing-method="Restricted" min-leverage-factor="0.2" extra-shots="0" allow-inside="true">
+         <max-pick-tolerance value="0.0" units="Millimeters"/>
+      </vision-compositing>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>NT1</string>
+      </compatible-nozzle-tip-ids>
+   </package>
 </openpnp-packages>
