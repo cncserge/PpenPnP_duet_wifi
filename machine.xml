@@ -93,7 +93,7 @@
                   <manual-nozzle-tip-change-location units="Millimeters" x="145.615" y="196.437" z="45.0" rotation="0.0"/>
                   <vacuum-actuator-name>AVAC1</vacuum-actuator-name>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS184cb1f5c9760478" axis-Y-id="AXS184cb1f5c98dc4f0" axis-Z-id="AXS184cb1fd14bb2a88" axis-rotation-id="AXS184cb1fd14cb9d14" id="NOZ184cb1fd149e0660" name="N2" rotation-mode="PlacementAngle" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="200" place-dwell-milliseconds="200" current-nozzle-tip-id="NT1" changer-enabled="true" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS184cb1f5c9760478" axis-Y-id="AXS184cb1f5c98dc4f0" axis-Z-id="AXS184cb1fd14bb2a88" axis-rotation-id="AXS184cb1fd14cb9d14" id="NOZ184cb1fd149e0660" name="N2" rotation-mode="PlacementAngle" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="200" place-dwell-milliseconds="200" changer-enabled="true" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
                      <string>NT1</string>
                      <string>TIP185198f3a66fcfb0</string>
@@ -451,7 +451,7 @@
             <location units="Millimeters" x="116.627" y="188.433" z="12.0" rotation="-90.0"/>
             <offsets units="Millimeters" x="4.0" y="4.0" z="0.0" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR185350cafac2d630" name="ReferenceTrayFeeder" enabled="true" part-id="PC817" feed-retry-count="3" pick-retry-count="0" tray-count-x="10" tray-count-y="1" feed-count="3">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR185350cafac2d630" name="ReferenceTrayFeeder" enabled="true" part-id="PC817" retry-count="3" feed-retry-count="3" pick-retry-count="0" tray-count-x="10" tray-count-y="1" feed-count="3">
             <location units="Millimeters" x="74.567" y="176.747" z="15.0" rotation="90.0"/>
             <offsets units="Millimeters" x="8.0" y="0.0" z="0.0" rotation="0.0"/>
          </feeder>
@@ -613,7 +613,7 @@
          </entry>
       </properties>
       <nozzle-tips>
-         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="NT1" name="R_504" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
+         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="NT1" name="L_508" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
             <changer-start-location units="Millimeters" x="336.715" y="-36.763" z="11.0" rotation="0.0"/>
             <changer-start-to-mid-speed>0.2</changer-start-to-mid-speed>
             <changer-mid-location units="Millimeters" x="336.715" y="-36.763" z="1.2" rotation="0.0"/>
@@ -675,7 +675,7 @@
             <vacuum-difference-part-off-high>0.0</vacuum-difference-part-off-high>
             <diameter-low value="0.0" units="Millimeters"/>
          </nozzle-tip>
-         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP184fb55e88e11cbc" name="507" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
+         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP184fb55e88e11cbc" name="L_505" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
             <changer-start-location units="Millimeters" x="185.615" y="196.437" z="-45.0" rotation="0.0"/>
             <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
             <changer-mid-location units="Millimeters" x="185.615" y="196.437" z="-45.0" rotation="0.0"/>
@@ -732,14 +732,14 @@
             <vacuum-difference-part-off-high>0.0</vacuum-difference-part-off-high>
             <diameter-low value="0.0" units="Millimeters"/>
          </nozzle-tip>
-         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP185198db87d9041c" name="R_503" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
+         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP185198db87d9041c" name="R_504" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
             <changer-start-location units="Millimeters" x="311.719" y="-36.763" z="11.0" rotation="0.0"/>
             <changer-start-to-mid-speed>0.2</changer-start-to-mid-speed>
             <changer-mid-location units="Millimeters" x="311.719" y="-36.763" z="1.2" rotation="0.0"/>
             <changer-mid-to-mid-2-speed>0.2</changer-mid-to-mid-2-speed>
-            <changer-mid-location-2 units="Millimeters" x="311.719" y="-16.763" z="1.5" rotation="0.0"/>
+            <changer-mid-location-2 units="Millimeters" x="311.719" y="-21.763" z="1.2" rotation="0.0"/>
             <changer-mid-2-to-end-speed>1.0</changer-mid-2-to-end-speed>
-            <changer-end-location units="Millimeters" x="311.719" y="-16.763" z="40.0" rotation="0.0"/>
+            <changer-end-location units="Millimeters" x="311.719" y="-21.763" z="40.0" rotation="0.0"/>
             <touch-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <vision-calibration-Z-adjust value="0.0" units="Millimeters"/>
             <vision-template-dimension-x value="10.0" units="Millimeters"/>
@@ -766,12 +766,7 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="runout_calibration_result_" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap">
-                  <entry>
-                     <string>NOZ184cb1fd149e0660</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="0.19903980468612992" center-y="0.06905955197839075" radius="0.28081947821975123" phase-shift="-156.35837040349872" units="Millimeters" peak-error="0.6483449885314759" rms-error="0.4143699340708757"/>
-                  </entry>
-               </runout-compensation-lookup>
+               <runout-compensation-lookup class="java.util.HashMap"/>
                <minimum-detail-size value="0.2" units="Millimeters"/>
                <offset-threshold-length value="1.0" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
@@ -794,14 +789,14 @@
             <vacuum-difference-part-off-high>0.0</vacuum-difference-part-off-high>
             <diameter-low value="0.0" units="Millimeters"/>
          </nozzle-tip>
-         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP185198f3a66fcfb0" name="R_502" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
+         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP185198f3a66fcfb0" name="R_503" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
             <changer-start-location units="Millimeters" x="286.815" y="-36.763" z="11.0" rotation="0.0"/>
             <changer-start-to-mid-speed>0.2</changer-start-to-mid-speed>
             <changer-mid-location units="Millimeters" x="286.815" y="-36.763" z="1.2" rotation="0.0"/>
             <changer-mid-to-mid-2-speed>0.2</changer-mid-to-mid-2-speed>
-            <changer-mid-location-2 units="Millimeters" x="286.815" y="-16.763" z="1.5" rotation="0.0"/>
+            <changer-mid-location-2 units="Millimeters" x="286.815" y="-21.763" z="1.5" rotation="0.0"/>
             <changer-mid-2-to-end-speed>1.0</changer-mid-2-to-end-speed>
-            <changer-end-location units="Millimeters" x="286.815" y="-16.763" z="40.0" rotation="0.0"/>
+            <changer-end-location units="Millimeters" x="286.815" y="-21.763" z="40.0" rotation="0.0"/>
             <touch-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <vision-calibration-Z-adjust value="0.0" units="Millimeters"/>
             <vision-template-dimension-x value="10.0" units="Millimeters"/>
@@ -828,12 +823,7 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="runout_calibration_result_" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap">
-                  <entry>
-                     <string>NOZ184cb1fd149e0660</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="0.06503431204439228" center-y="-0.19775739784927474" radius="0.45700408261778147" phase-shift="-101.26161411032932" units="Millimeters" peak-error="0.796263768796979" rms-error="0.48473486517402087"/>
-                  </entry>
-               </runout-compensation-lookup>
+               <runout-compensation-lookup class="java.util.HashMap"/>
                <minimum-detail-size value="0.2" units="Millimeters"/>
                <offset-threshold-length value="1.0" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
@@ -856,64 +846,7 @@
             <vacuum-difference-part-off-high>0.0</vacuum-difference-part-off-high>
             <diameter-low value="0.0" units="Millimeters"/>
          </nozzle-tip>
-         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1851c58cb396a9a0" name="505" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
-            <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
-            <changer-mid-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <changer-mid-to-mid-2-speed>1.0</changer-mid-to-mid-2-speed>
-            <changer-mid-location-2 units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <changer-mid-2-to-end-speed>1.0</changer-mid-2-to-end-speed>
-            <changer-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <touch-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <vision-calibration-Z-adjust value="0.0" units="Millimeters"/>
-            <vision-template-dimension-x value="10.0" units="Millimeters"/>
-            <vision-template-dimension-y value="10.0" units="Millimeters"/>
-            <vision-template-tolerance value="4.0" units="Millimeters"/>
-            <vision-calibration-tolerance value="0.7" units="Millimeters"/>
-            <min-part-diameter value="0.0" units="Millimeters"/>
-            <max-part-diameter value="20.0" units="Millimeters"/>
-            <max-part-height value="5.0" units="Millimeters"/>
-            <max-pick-tolerance value="1.0" units="Millimeters"/>
-            <calibration angle-subdivisions="6" allow-misdetections="0" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="false" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChangeInJob" background-calibration-method="None" background-min-hue="0" background-max-hue="0" background-tol-hue="8" background-min-saturation="0" background-max-saturation="0" background-tol-saturation="8" background-min-value="0" background-max-value="0" background-tol-value="8" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
-               <pipeline>
-                  <stages>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="false" settle-option="Settle" count="1">
-                        <light class="java.lang.Boolean">true</light>
-                     </cv-stage>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="runout_calibration_source_" suffix=".png"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="2" enabled="false" kernel-size="7" property-name="BlurGaussian"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.DetectCircularSymmetry" name="results" enabled="true" min-diameter="30" max-diameter="50" max-distance="200" search-width="0" search-height="0" max-target-count="1" min-symmetry="1.2" corr-symmetry="0.0" outer-margin="0.2" inner-margin="0.4" sub-sampling="8" super-sampling="1" symmetry-score="OverallVarianceVsRingVarianceSum" property-name="nozzleTip" diagnostics="false" heat-map="false"/>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="4" enabled="true" circles-stage-name="results" thickness="2">
-                        <color r="255" g="0" b="51" a="255"/>
-                        <center-color r="0" g="204" b="255" a="255"/>
-                     </cv-stage>
-                     <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="runout_calibration_result_" suffix=".png"/>
-                  </stages>
-               </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap"/>
-               <minimum-detail-size value="0.2" units="Millimeters"/>
-               <offset-threshold-length value="0.5" units="Millimeters"/>
-               <calibration-Z-offset value="0.0" units="Millimeters"/>
-               <calibration-tip-diameter value="0.0" units="Millimeters"/>
-            </calibration>
-            <method-part-on>None</method-part-on>
-            <part-on-check-after-pick>true</part-on-check-after-pick>
-            <part-on-check-align>true</part-on-check-align>
-            <part-on-check-before-place>true</part-on-check-before-place>
-            <vacuum-level-part-on-low>0.0</vacuum-level-part-on-low>
-            <vacuum-level-part-on-high>0.0</vacuum-level-part-on-high>
-            <vacuum-difference-part-on-low>0.0</vacuum-difference-part-on-low>
-            <vacuum-difference-part-on-high>0.0</vacuum-difference-part-on-high>
-            <method-part-off>None</method-part-off>
-            <part-off-check-after-place>true</part-off-check-after-place>
-            <part-off-check-before-pick>true</part-off-check-before-pick>
-            <vacuum-level-part-off-low>0.0</vacuum-level-part-off-low>
-            <vacuum-level-part-off-high>0.0</vacuum-level-part-off-high>
-            <vacuum-difference-part-off-low>0.0</vacuum-difference-part-off-low>
-            <vacuum-difference-part-off-high>0.0</vacuum-difference-part-off-high>
-            <diameter-low value="0.0" units="Millimeters"/>
-         </nozzle-tip>
-         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1851c58f8f04edc4" name="508" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
+         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1851c58cb396a9a0" name="L_502" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" place-blow-off-level="0.0" vision-calibration="None" vision-calibration-trigger="Manual" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
             <changer-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
             <changer-mid-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
