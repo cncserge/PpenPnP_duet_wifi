@@ -186,8 +186,8 @@
       </heads>
       <signalers/>
       <feeders>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR18533ef14b422c64" name="ReferenceTrayFeeder" enabled="true" part-id="MMBT2222A" retry-count="3" feed-retry-count="3" pick-retry-count="5" tray-count-x="10" tray-count-y="1" feed-count="7">
-            <location units="Millimeters" x="116.627" y="188.433" z="12.0" rotation="-90.0"/>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR18533ef14b422c64" name="ReferenceTrayFeeder" enabled="true" part-id="MMBT2222A" retry-count="3" feed-retry-count="3" pick-retry-count="5" tray-count-x="10" tray-count-y="1" feed-count="8">
+            <location units="Millimeters" x="116.627" y="188.433" z="40.0" rotation="-90.0"/>
             <offsets units="Millimeters" x="4.0" y="4.0" z="0.0" rotation="0.0"/>
          </feeder>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceTrayFeeder" version="1.1" id="FDR185350cafac2d630" name="ReferenceTrayFeeder" enabled="true" part-id="PC817" retry-count="3" feed-retry-count="3" pick-retry-count="0" tray-count-x="10" tray-count-y="1" feed-count="3">
