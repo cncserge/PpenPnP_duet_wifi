@@ -496,7 +496,7 @@
             <sum-of-errors value="0.0" units="Millimeters"/>
             <sum-of-error-squares value="0.0" units="Millimeters"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferencePushPullFeeder" version="1.1" id="FDR1854f73b674c0d54" name="L_11" enabled="false" part-id="MMBT2222A" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="true" used-as-template="false" calibrate-motion-x="true" calibrate-motion-y="true" feed-multiplier="1" feed-speed-push-2="1.0" feed-speed-push-3="1.0" feed-speed-push-end="1.0" feed-speed-pull-3="1.0" feed-speed-pull-2="1.0" feed-speed-pull-1="1.0" feed-speed-pull-0="1.0" included-push-1="true" included-push-2="true" included-push-3="true" included-push-end="true" included-multi-0="false" included-multi-1="false" included-multi-2="false" included-multi-3="false" included-multi-end="false" included-pull-0="true" included-pull-1="false" included-pull-2="false" included-pull-3="false" additive-rotation="true" actuator-name="PUSH_PULL_L" peel-off-actuator-name="PUMP" feed-count="3" pipeline-type="ColorKeyed" ocr-font-name="Liberation Mono" ocr-font-size-pt="7.0" ocr-wrong-part-action="None" ocr-discover-on-job-start="false" ocr-stop-after-wrong-part="false" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" row-location-tolerance-mm="4.0" row-Z-location-tolerance-mm="1.0" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="None">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferencePushPullFeeder" version="1.1" id="FDR1854f73b674c0d54" name="L_11" enabled="false" part-id="MMBT2222A" retry-count="3" feed-retry-count="3" pick-retry-count="0" rotation-in-feeder="0.0" normalize-pick-location="true" snap-to-axis="true" used-as-template="false" calibrate-motion-x="true" calibrate-motion-y="true" feed-multiplier="1" feed-speed-push-2="1.0" feed-speed-push-3="1.0" feed-speed-push-end="1.0" feed-speed-pull-3="1.0" feed-speed-pull-2="1.0" feed-speed-pull-1="1.0" feed-speed-pull-0="1.0" included-push-1="true" included-push-2="true" included-push-3="true" included-push-end="true" included-multi-0="false" included-multi-1="false" included-multi-2="false" included-multi-3="false" included-multi-end="false" included-pull-0="true" included-pull-1="false" included-pull-2="false" included-pull-3="false" additive-rotation="true" actuator-name="PUSH_PULL_L" peel-off-actuator-name="PUMP" feed-count="4" pipeline-type="ColorKeyed" ocr-font-name="Liberation Mono" ocr-font-size-pt="7.0" ocr-wrong-part-action="None" ocr-discover-on-job-start="false" ocr-stop-after-wrong-part="false" calibration-count="0" calibration-tolerance-mm="1.95" sprocket-hole-tolerance-mm="0.6" row-location-tolerance-mm="4.0" row-Z-location-tolerance-mm="1.0" calibrate-max-passes="3" calibrate-tolerance-mm="0.3" calibrate-min-statistic="2" calibration-trigger="None">
             <location units="Millimeters" x="42.312" y="150.339" z="11.3" rotation="0.0"/>
             <hole-1-location units="Millimeters" x="44.311" y="153.812" z="0.0" rotation="0.0"/>
             <hole-2-location units="Millimeters" x="48.436" y="153.939" z="0.0" rotation="0.0"/>
@@ -584,9 +584,9 @@
                <focal-resolution value="0.05" units="Millimeters"/>
             </focus-provider>
             <back-light-compensation property="BackLightCompensation" value="1" auto="false"/>
-            <brightness property="Brightness" value="-28" auto="false"/>
+            <brightness property="Brightness" value="-29" auto="false"/>
             <contrast property="Contrast" value="126" auto="false"/>
-            <exposure property="Exposure" value="-4" auto="false"/>
+            <exposure property="Exposure" value="-7" auto="false"/>
             <focus property="Focus"/>
             <gain property="Gain" value="34" auto="false"/>
             <gamma property="Gamma" value="173" auto="false"/>
@@ -883,7 +883,7 @@
             <max-part-diameter value="3.0" units="Millimeters"/>
             <max-part-height value="5.0" units="Millimeters"/>
             <max-pick-tolerance value="2.0" units="Millimeters"/>
-            <calibration angle-subdivisions="9" allow-misdetections="3" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChangeInJob" background-calibration-method="BrightnessAndKeyColor" background-min-hue="59" background-max-hue="91" background-tol-hue="8" background-min-saturation="63" background-max-saturation="69" background-tol-saturation="8" background-min-value="128" background-max-value="155" background-tol-value="8" background-diagnostics="&lt;html&gt;Non-color-keyed background elements are too bright.&lt;br/&gt;Try to eliminate highlights and reflections.&lt;br/&gt;Use a shade behind the nozzle.&lt;br/&gt;Renew the blackening of dark parts of the nozzle tip.&lt;br/&gt;Clean the nozzle tip. If it is shiny, make it dull.&lt;br/&gt;Eliminate light sources that reflect on the nozzle tip.&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
+            <calibration angle-subdivisions="9" allow-misdetections="3" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChangeInJob" background-calibration-method="BrightnessAndKeyColor" background-min-hue="255" background-max-hue="255" background-tol-hue="8" background-min-saturation="62" background-max-saturation="255" background-tol-saturation="8" background-min-value="31" background-max-value="31" background-tol-value="8" background-diagnostics="&lt;html&gt;Non-color-keyed background elements are possibly too dark. &lt;br/&gt;Check camera exposure.&lt;br/&gt;&lt;hr/&gt;The key color is not detectable.&lt;br/&gt;&lt;hr/&gt;The key color is not vivid enough.&lt;br/&gt;Check camera white balance (see the Wiki).&lt;br/&gt;Clean the nozzle tip. If it is shiny, make it dull.&lt;br/&gt;Eliminate light sources that reflect on the nozzle tip.&lt;br/&gt;&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
                <pipeline>
                   <stages>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="false" settle-option="Settle" count="1">
@@ -899,7 +899,12 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="runout_calibration_result_" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap"/>
+               <runout-compensation-lookup class="java.util.HashMap">
+                  <entry>
+                     <string>NOZ184cb1fd149e0660</string>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="0.05119218630734858" center-y="0.005688020700816508" radius="0.015824497698509254" phase-shift="107.61401002436527" units="Millimeters" peak-error="0.13974229671803284" rms-error="0.07622286594205778"/>
+                  </entry>
+               </runout-compensation-lookup>
                <minimum-detail-size value="0.2" units="Millimeters"/>
                <offset-threshold-length value="0.5" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
@@ -956,7 +961,12 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="true" prefix="runout_calibration_result_" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap"/>
+               <runout-compensation-lookup class="java.util.HashMap">
+                  <entry>
+                     <string>N1</string>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.003412812420489927" center-y="0.03640333248522565" radius="0.11415869390315465" phase-shift="-0.561705332566545" units="Millimeters" peak-error="0.016952669926323268" rms-error="0.011567133521641675"/>
+                  </entry>
+               </runout-compensation-lookup>
                <minimum-detail-size value="0.2" units="Millimeters"/>
                <offset-threshold-length value="0.5" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
