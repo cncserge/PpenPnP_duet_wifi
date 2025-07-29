@@ -7,7 +7,7 @@
    <part id="R1206-22k" height-units="Millimeters" height="0.4" package-id="R1206" speed="1.0" pick-retry-count="3"/>
    <part id="R1206-2k" height-units="Millimeters" height="0.4" package-id="R1206" speed="1.0" pick-retry-count="3"/>
    <part bottom-vision-id="BVS18551b182d065a90" id="MMBT2222A" height-units="Millimeters" height="0.4" package-id="SOT-23" speed="1.0" pick-retry-count="3"/>
-   <part id="PC817" height-units="Millimeters" height="3.5" package-id="SMDIP4" speed="1.0" pick-retry-count="3"/>
+   <part bottom-vision-id="BVS1856aaa8fd962fc0" id="PC817" height-units="Millimeters" height="3.5" package-id="SMDIP4" speed="1.0" pick-retry-count="3"/>
    <part id="R1206_750" height-units="Millimeters" height="0.4" package-id="R1206" speed="1.0" pick-retry-count="3"/>
    <part id="R0805_100K" height-units="Millimeters" height="0.4" package-id="R0805" speed="1.0" pick-retry-count="3"/>
 </openpnp-parts>
