@@ -174,7 +174,7 @@
       </cv-pipeline>
       <vision-offset units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
    </vision-settings>
-   <vision-settings class="org.openpnp.model.BottomVisionSettings" id="BVS18551e5e7a6770f0" name="R1206" enabled="true" pre-rotate-usage="AlwaysOn" check-part-size-method="Disabled" check-size-tolerance-percent="10" max-rotation="Full" asymmetric="false">
+   <vision-settings class="org.openpnp.model.BottomVisionSettings" id="BVS18551e5e7a6770f0" name="R1206" enabled="true" pre-rotate-usage="AlwaysOn" check-part-size-method="BodySize" check-size-tolerance-percent="20" max-rotation="Full" asymmetric="false">
       <cv-pipeline>
          <stages>
             <cv-stage class="org.openpnp.vision.pipeline.stages.ParameterNumeric" name="pThreshold" enabled="true" parameter-label="Threshold" parameter-description="Set the brightness threshold that isolates the shiny contacts of a part." stage-name="threshold" property-name="threshold" effect-stage-name="threshold" preview-result="true" minimum-value="1.0" maximum-value="254.0" default-value="100.0" numeric-type="Integer"/>
@@ -229,7 +229,7 @@
             <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="8" enabled="true" conversion="Bgr2Gray"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="threshold" enabled="true" threshold="201" auto="false" invert="false"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.FindContours" name="findCountours" enabled="true" retrieval-mode="List" approximation-method="None"/>
-            <cv-stage class="org.openpnp.vision.pipeline.stages.FilterContours" name="filterContours" enabled="true" contours-stage-name="findCountours" min-area="112.92627633929807" max-area="900000.0" property-name="FilterContours"/>
+            <cv-stage class="org.openpnp.vision.pipeline.stages.FilterContours" name="filterContours" enabled="true" contours-stage-name="findCountours" min-area="29.621138552402876" max-area="900000.0" property-name="FilterContours"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="11" enabled="true" diameter="300" property-name=""/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.DrawContours" name="contours" enabled="true" contours-stage-name="filterContours" thickness="1" index="-1">
                <color r="255" g="255" b="255" a="255"/>
@@ -291,7 +291,7 @@
       </pipeline-parameter-assignments>
       <vision-offset units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
    </vision-settings>
-   <vision-settings class="org.openpnp.model.BottomVisionSettings" id="BVS185bb10771a9dba0" name="C0805" enabled="true" pre-rotate-usage="AlwaysOn" check-part-size-method="Disabled" check-size-tolerance-percent="30" max-rotation="Full" asymmetric="false">
+   <vision-settings class="org.openpnp.model.BottomVisionSettings" id="BVS185bb10771a9dba0" name="C0805" enabled="true" pre-rotate-usage="AlwaysOn" check-part-size-method="BodySize" check-size-tolerance-percent="30" max-rotation="Full" asymmetric="false">
       <cv-pipeline>
          <stages>
             <cv-stage class="org.openpnp.vision.pipeline.stages.ParameterNumeric" name="pThreshold" enabled="true" parameter-label="Threshold" parameter-description="Set the brightness threshold that isolates the shiny contacts of a part." stage-name="threshold" property-name="threshold" effect-stage-name="threshold" preview-result="true" minimum-value="1.0" maximum-value="254.0" default-value="100.0" numeric-type="Integer"/>
@@ -307,7 +307,7 @@
             <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="8" enabled="true" conversion="Bgr2Gray"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="threshold" enabled="true" threshold="206" auto="false" invert="false"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.FindContours" name="findCountours" enabled="true" retrieval-mode="List" approximation-method="None"/>
-            <cv-stage class="org.openpnp.vision.pipeline.stages.FilterContours" name="filterContours" enabled="true" contours-stage-name="findCountours" min-area="71.96946853768556" max-area="900000.0" property-name="FilterContours"/>
+            <cv-stage class="org.openpnp.vision.pipeline.stages.FilterContours" name="filterContours" enabled="true" contours-stage-name="findCountours" min-area="18.87795886134002" max-area="900000.0" property-name="FilterContours"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="11" enabled="true" diameter="0" property-name=""/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.DrawContours" name="contours" enabled="true" contours-stage-name="filterContours" thickness="1" index="-1">
                <color r="255" g="255" b="255" a="255"/>
@@ -330,7 +330,7 @@
       </pipeline-parameter-assignments>
       <vision-offset units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
    </vision-settings>
-   <vision-settings class="org.openpnp.model.BottomVisionSettings" id="BVS185bb2c490c8ab74" name="R0805" enabled="true" pre-rotate-usage="AlwaysOn" check-part-size-method="Disabled" check-size-tolerance-percent="30" max-rotation="Full" asymmetric="false">
+   <vision-settings class="org.openpnp.model.BottomVisionSettings" id="BVS185bb2c490c8ab74" name="R0805" enabled="true" pre-rotate-usage="AlwaysOn" check-part-size-method="BodySize" check-size-tolerance-percent="20" max-rotation="Full" asymmetric="false">
       <cv-pipeline>
          <stages>
             <cv-stage class="org.openpnp.vision.pipeline.stages.ParameterNumeric" name="pThreshold" enabled="true" parameter-label="Threshold" parameter-description="Set the brightness threshold that isolates the shiny contacts of a part." stage-name="threshold" property-name="threshold" effect-stage-name="threshold" preview-result="true" minimum-value="1.0" maximum-value="254.0" default-value="100.0" numeric-type="Integer"/>
@@ -344,32 +344,32 @@
             <cv-stage class="org.openpnp.vision.pipeline.stages.MaskHsv" name="6" enabled="true" auto="false" fraction-to-mask="0.0" hue-min="60" hue-max="130" saturation-min="32" saturation-max="255" value-min="64" value-max="255" soft-edge="0" soft-factor="1.0" invert="false" binary-mask="false" property-name="MaskHsv"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="7" enabled="true" conversion="Hsv2BgrFull"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="8" enabled="true" conversion="Bgr2Gray"/>
-            <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="threshold" enabled="true" threshold="216" auto="false" invert="false"/>
+            <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="threshold" enabled="true" threshold="170" auto="false" invert="false"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.FindContours" name="findCountours" enabled="true" retrieval-mode="List" approximation-method="None"/>
-            <cv-stage class="org.openpnp.vision.pipeline.stages.FilterContours" name="filterContours" enabled="true" contours-stage-name="findCountours" min-area="71.96946853768556" max-area="900000.0" property-name="FilterContours"/>
-            <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="11" enabled="true" diameter="250" property-name=""/>
+            <cv-stage class="org.openpnp.vision.pipeline.stages.FilterContours" name="filterContours" enabled="true" contours-stage-name="findCountours" min-area="157.03951683922034" max-area="900000.0" property-name="FilterContours"/>
+            <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="11" enabled="true" diameter="0" property-name=""/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.DrawContours" name="contours" enabled="true" contours-stage-name="filterContours" thickness="1" index="-1">
                <color r="255" g="255" b="255" a="255"/>
             </cv-stage>
             <cv-stage class="org.openpnp.vision.pipeline.stages.MinAreaRect" name="results" enabled="true" threshold-min="100" threshold-max="255" expected-angle="0.0" search-angle="45.0" left-edge="true" right-edge="true" top-edge="true" bottom-edge="true" diagnostics="false" property-name="MinAreaRect"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="14" enabled="true" image-stage-name="0"/>
-            <cv-stage class="org.openpnp.vision.pipeline.stages.DrawRotatedRects" name="15" enabled="true" rotated-rects-stage-name="results" thickness="2" draw-rect-center="true" rect-center-radius="20" show-orientation="true"/>
+            <cv-stage class="org.openpnp.vision.pipeline.stages.DrawRotatedRects" name="15" enabled="true" rotated-rects-stage-name="results" thickness="2" draw-rect-center="false" rect-center-radius="20" show-orientation="false"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="true" prefix="bv_result_" suffix=".png"/>
          </stages>
       </cv-pipeline>
       <pipeline-parameter-assignments class="java.util.HashMap">
          <entry>
             <string>pDetail</string>
-            <object class="org.openpnp.model.Area" value="0.009025" units="SquareMillimeters"/>
+            <object class="org.openpnp.model.Area" value="0.07507600000000002" units="SquareMillimeters"/>
          </entry>
          <entry>
             <string>pThreshold</string>
-            <object class="java.lang.Integer">216</object>
+            <object class="java.lang.Integer">170</object>
          </entry>
       </pipeline-parameter-assignments>
       <vision-offset units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
    </vision-settings>
-   <vision-settings class="org.openpnp.model.BottomVisionSettings" id="BVS185bfac228d70538" name="C1206" enabled="true" pre-rotate-usage="AlwaysOn" check-part-size-method="Disabled" check-size-tolerance-percent="30" max-rotation="Full" asymmetric="false">
+   <vision-settings class="org.openpnp.model.BottomVisionSettings" id="BVS185bfac228d70538" name="C1206" enabled="true" pre-rotate-usage="AlwaysOn" check-part-size-method="BodySize" check-size-tolerance-percent="30" max-rotation="Full" asymmetric="false">
       <cv-pipeline>
          <stages>
             <cv-stage class="org.openpnp.vision.pipeline.stages.ParameterNumeric" name="pThreshold" enabled="true" parameter-label="Threshold" parameter-description="Set the brightness threshold that isolates the shiny contacts of a part." stage-name="threshold" property-name="threshold" effect-stage-name="threshold" preview-result="true" minimum-value="1.0" maximum-value="254.0" default-value="100.0" numeric-type="Integer"/>
@@ -385,7 +385,7 @@
             <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="8" enabled="true" conversion="Bgr2Gray"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="threshold" enabled="true" threshold="216" auto="false" invert="false"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.FindContours" name="findCountours" enabled="true" retrieval-mode="List" approximation-method="None"/>
-            <cv-stage class="org.openpnp.vision.pipeline.stages.FilterContours" name="filterContours" enabled="true" contours-stage-name="findCountours" min-area="71.96946853768556" max-area="900000.0" property-name="FilterContours"/>
+            <cv-stage class="org.openpnp.vision.pipeline.stages.FilterContours" name="filterContours" enabled="true" contours-stage-name="findCountours" min-area="18.87795886134002" max-area="900000.0" property-name="FilterContours"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="11" enabled="true" diameter="0" property-name=""/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.DrawContours" name="contours" enabled="true" contours-stage-name="filterContours" thickness="1" index="-1">
                <color r="255" g="255" b="255" a="255"/>
@@ -424,7 +424,7 @@
             <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="8" enabled="true" conversion="Bgr2Gray"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="threshold" enabled="true" threshold="216" auto="false" invert="false"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.FindContours" name="findCountours" enabled="true" retrieval-mode="List" approximation-method="None"/>
-            <cv-stage class="org.openpnp.vision.pipeline.stages.FilterContours" name="filterContours" enabled="true" contours-stage-name="findCountours" min-area="71.96946853768556" max-area="900000.0" property-name="FilterContours"/>
+            <cv-stage class="org.openpnp.vision.pipeline.stages.FilterContours" name="filterContours" enabled="true" contours-stage-name="findCountours" min-area="18.87795886134002" max-area="900000.0" property-name="FilterContours"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="11" enabled="true" diameter="0" property-name=""/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.DrawContours" name="contours" enabled="true" contours-stage-name="filterContours" thickness="1" index="-1">
                <color r="255" g="255" b="255" a="255"/>
