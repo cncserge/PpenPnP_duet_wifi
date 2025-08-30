@@ -28,4 +28,7 @@
    <part bottom-vision-id="BVS185bb2c490c8ab74" id="R0805_3K" height-units="Millimeters" height="0.3" package-id="R0805" speed="1.0" pick-retry-count="0"/>
    <part bottom-vision-id="BVS185c0307a5610930" id="ESP32_WROOM_32UE" height-units="Millimeters" height="3.3" package-id="ESP32_WROOM_32UE" speed="1.0" pick-retry-count="0"/>
    <part bottom-vision-id="BVS185c03951e8ca110" id="ESP32_WROOM_32E" height-units="Millimeters" height="3.3" package-id="ESP32_WROOM_32E" speed="1.0" pick-retry-count="0"/>
+   <part bottom-vision-id="BVS186077a0cff47ecc" id="AMS1117-3.3" height-units="Millimeters" height="1.6" package-id="SOT-223-3" speed="1.0" pick-retry-count="0"/>
+   <part id="LTV-214-B-G" height-units="Millimeters" height="2.0" package-id="SSOP-4_4.4x2.6" speed="1.0" pick-retry-count="0"/>
+   <part id="MAX3485" height-units="Millimeters" height="1.27" package-id="SOIC_8" speed="1.0" pick-retry-count="0"/>
 </openpnp-parts>
