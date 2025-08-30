@@ -31,4 +31,5 @@
    <part bottom-vision-id="BVS186077a0cff47ecc" id="AMS1117-3.3" height-units="Millimeters" height="1.6" package-id="SOT-223-3" speed="1.0" pick-retry-count="0"/>
    <part id="LTV-214-B-G" height-units="Millimeters" height="2.0" package-id="SSOP-4_4.4x2.6" speed="1.0" pick-retry-count="0"/>
    <part id="MAX3485" height-units="Millimeters" height="1.27" package-id="SOIC_8" speed="1.0" pick-retry-count="0"/>
+   <part bottom-vision-id="BVS18607e9c87300cf8" id="SK56" height-units="Millimeters" height="2.0" package-id="SMB" speed="1.0" pick-retry-count="0"/>
 </openpnp-parts>
