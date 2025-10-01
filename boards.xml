@@ -5,4 +5,5 @@
    <board>C:\Users\cncse\Work\WendingAgeOfAquarius\pcb\PNP\WendingAgeOfAquarius.board.xml</board>
    <board>C:\Users\cncse\Work\CarWash\PCB\Relay_old\pnp\RelayBoardCarWash_top_NO_FRQ.board.xml</board>
    <board>C:\Users\cncse\Work\CarWash\PCB\Relay_old\pnp\RelayBoardCarWash_bot.board.xml</board>
+   <board>C:\Users\cncse\Work\CarWash\PCB\Relay\Relay\pnp\CarWashNewRelay.board.xml</board>
 </openpnp-boards>

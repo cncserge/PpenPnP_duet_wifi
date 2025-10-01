@@ -132,6 +132,7 @@
          <max-pick-tolerance value="0.0" units="Millimeters"/>
       </vision-compositing>
       <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>TIP185ac14be02e0698</string>
          <string>TIP185ac14b637019d4</string>
       </compatible-nozzle-tip-ids>
    </package>
